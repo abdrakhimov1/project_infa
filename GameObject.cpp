@@ -2,14 +2,18 @@
 // Created by ruby on 22.03.18.
 //
 
+//#include "Component.cpp"
+#include <vector>
+#include <iostream>
 #include "Component.cpp"
 
 class abstractGameObject{
+    components* c = new components;
 public:
     virtual void init() = 0;
         virtual ~abstractGameObject(){}
-        vector<Component> Components;
         int matrix[3][3];
+
 };
 
 
@@ -19,4 +23,8 @@ public:
 
     }
 };
+
+int main(){
+    return 0;
+}
 
