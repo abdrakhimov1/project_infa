@@ -15,6 +15,7 @@ private:
 public:
 
     vector<GameObject> Objects;
+    
 
     static Resources& getInstance() {
         static Resources  instance;
