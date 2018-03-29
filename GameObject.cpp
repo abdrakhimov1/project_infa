@@ -5,6 +5,7 @@
 //#include "Component.cpp"
 #include <vector>
 #include <iostream>
+#include <utility>
 #include "Component.cpp"
 
 class abstractGameObject{
@@ -12,7 +13,8 @@ class abstractGameObject{
 public:
     virtual void init() = 0;
         virtual ~abstractGameObject(){}
-        int matrix[3][3];
+
+        std::pair<float, float> CenterCoordinates;
 
 };
 

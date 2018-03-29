@@ -4,6 +4,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <utility>
 
 
 
@@ -31,20 +32,41 @@ public:Decorator(abstractComponent * component1){
 
 
 
-class Speed: Decorator{
+class RigidBody : Decorator{
     public:
-    std::map< int, int> speed;
-    Speed(abstractComponent* component1, int V_X, int V_Y) : Decorator(component1){speed.insert(std::make_pair(V_X, V_Y));}
+    std::pair< int, int> speed;
+    RigidBody(abstractComponent* component1, int V_X, int V_Y) : Decorator(component1){std::make_pair(V_X, V_Y);}
 
     void init(){
         Decorator::init();
-
-        std::cout << "Speed addded. \n" << std::endl;
         }
 };
 
+class DrawMe : Decorator{
+
+//FIXME
+
+    void init(){
+        Decorator::init();
+    }
+};
+
+class Collider : Decorator{
+
+    //FIXME
+
+    bool Detect(float dotX, float dotY, float X0, float Y0, float X1, float Y1){
+        float d = (dotX - X0) * (Y1 - Y0) - (dotY - Y0) * (X1 - X0);
+        return d > 0;
+    }
+
+    void init(){
+        Decorator::init();
+    }
+};
+
 class components{
-    std::vector<Component> list;
+    std::vector<Component> components_list;
 
 public:
     void addComponent(Component comp){
