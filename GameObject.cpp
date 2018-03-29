@@ -12,7 +12,8 @@ class abstractGameObject{
 public:
     virtual void init() = 0;
         virtual ~abstractGameObject(){}
-        int matrix[3][3];
+
+        float matrix[2][2];
 
 };
 

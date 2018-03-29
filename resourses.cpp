@@ -12,7 +12,7 @@ class Resources
 private:
     Resources() {}
     Resources( const Resources&);
-    Resources& operator=( Resources& );
+
 public:
 
     vector<GameObject> Objects;
