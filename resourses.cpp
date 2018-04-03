@@ -28,5 +28,3 @@ public:
         return instance;
     }
 };
-
-

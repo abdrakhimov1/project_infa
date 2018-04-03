@@ -4,6 +4,8 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <list>
+
 
 
 
@@ -50,9 +52,29 @@ class DrawMe : Decorator{
     }
 };
 
+class Dot{
+public:
+        Dot(float x, float y){
+            crs = std::make_pair(x, y);
+            }
+
+            std::pair < float, float > crs;
+};
+
+
+
+
+
 class Collider : Decorator{
 
-    //FIXME
+    std::list<Dot> dots_list;
+
+    
+
+    void Add_dot(Dot dot, std::list<Dot> dots_list){
+        dots_list.push_back(dot);
+    }
+
 
     bool Detect(float dotX, float dotY, float X0, float Y0, float X1, float Y1){
         float d = (dotX - X0) * (Y1 - Y0) - (dotY - Y0) * (X1 - X0);
@@ -69,8 +91,7 @@ class components{
 
 public:
     void addComponent(Component comp){
-        list.push_back(comp);
+        components_list.push_back(comp);
 
     };
 };
-

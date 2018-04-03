@@ -7,6 +7,7 @@
 #include <iostream>
 #include "Component.cpp"
 
+
 class abstractGameObject{
     components* c = new components;
 public:
@@ -25,7 +26,4 @@ public:
     }
 };
 
-int main(){
-    return 0;
-}
 
