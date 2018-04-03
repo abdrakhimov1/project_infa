@@ -57,7 +57,6 @@ public:
         Dot(float x, float y){
             crs = std::make_pair(x, y);
             }
-
             std::pair < float, float > crs;
 };
 
@@ -68,8 +67,6 @@ public:
 class Collider : Decorator{
 
     std::list<Dot> dots_list;
-
-    
 
     void Add_dot(Dot dot, std::list<Dot> dots_list){
         dots_list.push_back(dot);
@@ -86,12 +83,4 @@ class Collider : Decorator{
     }
 };
 
-class components{
-    std::vector<Component> components_list;
 
-public:
-    void addComponent(Component comp){
-        components_list.push_back(comp);
-
-    };
-};

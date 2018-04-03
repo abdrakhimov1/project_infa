@@ -2,7 +2,7 @@
 // Created by ruby on 22.03.18.
 //
 
-#include "vector.h"
+#include <vector>
 #include "GameObject.cpp"
 #include <SFML/Graphics.h>
 
@@ -15,7 +15,7 @@ private:
 
 public:
 
-    vector<GameObject> Objects;
+    std::vector<GameObject> Objects;
     sf::RenderWindow window = new sf::RenderWindow;
 
 

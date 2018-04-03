@@ -9,7 +9,6 @@
 
 
 class abstractGameObject{
-    components* c = new components;
 public:
     virtual void init() = 0;
         virtual ~abstractGameObject(){}
