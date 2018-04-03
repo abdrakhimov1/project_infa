@@ -1,8 +1,7 @@
 //
 // Created by fantom on 22.03.18.
+//
 
-#include <vector>
-#include <utility>
 #define resourses Resources::getInstance()
 
 std::pair<float, float> SummPairs(std::pair<float, float> FirstPair, std::pair<float, float> SecondPair)
@@ -61,5 +60,3 @@ void MoveColliders()
 {
     //FIXME
 }
-
-#include "Physics.h"

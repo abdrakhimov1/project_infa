@@ -2,10 +2,6 @@
 // Created by ruby on 22.03.18.
 //
 
-#include <vector>
-//#include <SFML/Graphics.h>
-
-
 class Resources
 {
 private:
@@ -15,7 +11,7 @@ private:
 public:
 
     std::vector<GameObject> Objects;
-    sf::RenderWindow window = new sf::RenderWindow;
+    sf::RenderWindow window;
     float CurrentFrameTime;
     float LastFrameTime;
 

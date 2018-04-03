@@ -6,7 +6,7 @@
 #include <vector>
 #include <list>
 
-class abstractComponent : abstractGameObject{
+class abstractComponent : GameObject{
 public:
     virtual void init(){}
 };
@@ -43,6 +43,12 @@ class DrawMe : Decorator{
 
 //FIXME
 
+    void init(){
+        Decorator::init();
+    }
+};
+
+class Final : Decorator{
     void init(){
         Decorator::init();
     }
