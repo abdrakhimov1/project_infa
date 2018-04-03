@@ -3,8 +3,7 @@
 //
 
 #include <vector>
-#include "GameObject.cpp"
-#include <SFML/Graphics.h>
+//#include <SFML/Graphics.h>
 
 
 class Resources
@@ -17,10 +16,11 @@ public:
 
     std::vector<GameObject> Objects;
     sf::RenderWindow window = new sf::RenderWindow;
+    float CurrentFrameTime;
+    float LastFrameTime;
 
-
-    void addObject(GameObject){
-        this -> Objects.push_back(GameObject);
+    void addObject(GameObject object){
+        this -> Objects.push_back(object);
     }
 
     static Resources& getInstance() {
@@ -28,3 +28,4 @@ public:
         return instance;
     }
 };
+

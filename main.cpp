@@ -1,12 +1,13 @@
 //
 // Created by ruby on 22.03.18.
 //
+
+#include "GameObject.cpp"
 #include "Component.cpp"
+#include "resourses.cpp"
+#include "Physics.cpp"
 
 int main(){
-    Dot zero_dot(0, 0);
-
-    Dot dot(123, 154);
 
     return 0;
 }

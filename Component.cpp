@@ -6,13 +6,9 @@
 #include <vector>
 #include <list>
 
-
-
-
-class abstractComponent{
+class abstractComponent : abstractGameObject{
 public:
-    virtual void init() = 0;
-    virtual ~abstractComponent(){}
+    virtual void init(){}
 };
 
 class Component : abstractComponent{
@@ -35,8 +31,8 @@ public:Decorator(abstractComponent * component1){
 
 class RigidBody : Decorator{
     public:
-    std::map< int, int> speed;
-    RigidBody(abstractComponent* component1, int V_X, int V_Y) : Decorator(component1){speed.insert(std::make_pair(V_X, V_Y));}
+    std::pair< int, int> speed;
+    RigidBody(abstractComponent* component1, int V_X, int V_Y) : Decorator(component1){std::make_pair(V_X, V_Y);}
 
     void init(){
         Decorator::init();
@@ -66,9 +62,9 @@ public:
 
 class Collider : Decorator{
 
-    std::list<Dot> dots_list;
+    std::vector<Dot> dots_list;
 
-    void Add_dot(Dot dot, std::list<Dot> dots_list){
+    void Add_dot(Dot dot, std::vector<Dot> dots_list){
         dots_list.push_back(dot);
     }
 
