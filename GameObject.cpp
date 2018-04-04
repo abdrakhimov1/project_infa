@@ -40,6 +40,7 @@ public:
     }
     virtual void init(){
         m_wrappee -> init();
+
     }
     private:
     abstractGameObject *m_wrappee;
@@ -51,8 +52,10 @@ public:
     ~GameObjectWithRigidBody(){}
     void init(){
         GameObject::init();
+        std::pair< float , float > speed;
+        std::cout << "RigidBody" << std::endl;
         }
-    std::pair< float , float > speed;
+
 };
 
 class GameObjectWithCollider : public GameObject{
@@ -61,16 +64,19 @@ public:
     ~GameObjectWithCollider(){}
     void init(){
         GameObject::init();
+        std::vector<Dot> dots_list;
+        std::cout << "Collider" << std::endl;
+        /*
+        void Add_dot(Dot dot, std::vector<Dot> dots_list){
+            dots_list.push_back(dot);
+        }
+        bool Detect(float dotX, float dotY, float X0, float Y0, float X1, float Y1){
+            float d = (dotX - X0) * (Y1 - Y0) - (dotY - Y0) * (X1 - X0);
+            return d > 0;
+        }*/
     }
 
-    std::vector<Dot> dots_list;
-    void Add_dot(Dot dot, std::vector<Dot> dots_list){
-        dots_list.push_back(dot);
-    }
-    bool Detect(float dotX, float dotY, float X0, float Y0, float X1, float Y1){
-        float d = (dotX - X0) * (Y1 - Y0) - (dotY - Y0) * (X1 - X0);
-        return d > 0;
-    }
+
 
 };
 
@@ -78,11 +84,20 @@ class GameObjectWithDrawMeFunction : public GameObject{
 public:
     GameObjectWithDrawMeFunction(abstractGameObject *core) : GameObject(core){}
     ~GameObjectWithDrawMeFunction(){}
-    void init(){
-        GameObject::init();
-    }
-
     void DrawMe(){
         //FIXME
     }
+
+
+
+    void init(){
+        GameObject::init();
+        std::cout << "DrawMe" << std::endl;
+        int b;
+    }
+
+
 };
+
+
+
