@@ -10,6 +10,7 @@
 #include "StupidObject.cpp"
 #include "resourses.cpp"
 #include "Physics.cpp"
+#include "Drawing.cpp"
 
 int main(){
 

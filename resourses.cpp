@@ -11,7 +11,7 @@ private:
 public:
 
     std::vector<GameObject> Objects;
-    sf::RenderWindow window;
+    sf::RenderWindow window(sf::VideoMode mode, const std::string name);
     float CurrentFrameTime;
     float LastFrameTime;
 
