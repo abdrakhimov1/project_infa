@@ -5,12 +5,15 @@
 #include <vector>
 #include <utility>
 #include "GameObject.cpp"
-#include "Component.cpp"
 #include "resourses.cpp"
 #include "Physics.cpp"
 
 int main(){
-    GameObject gameobject;
-    Final Try(new RigidBody(new Component(gameobject)));
+    GameObjectWithRigidBody *objwithspeed = new GameObjectWithRigidBody(new SimpleGameObject);
+    objwithspeed -> init();
+    objwithspeed -> speed = std::make_pair(4, 3);
+
+    GameObjectWithCollider *objectWithCollider = new GameObjectWithCollider(new SimpleGameObject);
+
     return 0;
 }
