@@ -2,7 +2,17 @@
 // Created by fantom on 22.03.18.
 //
 
-#define resourses Resources::getInstance()
+#define resources Resources::getInstance()
+
+bool IsIn(std::string Name, std::vector<std::string> NamesVector)
+{
+    bool result = false;
+    for (int i = 0; i < NamesVector.size(); i++) {
+        if (NamesVector[i] == Name)
+            result = true;
+    }
+    return  result;
+}
 
 std::pair<float, float> SummPairs(std::pair<float, float> FirstPair, std::pair<float, float> SecondPair)
 {
@@ -19,22 +29,32 @@ std::pair<float, float> MultiplyPair(std::pair<float, float> Pair, float Constan
 };
 
 std::pair<float, float> ExtractSpeed(GameObject object)
-//Extract speed from map of components
+//Extract speed from GameObject
 {
-    return std::make_pair(0, 0); //FIXME
+    std::pair<float, float> speed;
+    if (IsIn("RigidBody", object.ComponentsVector)) {
+        return object.speed;
+    }
+    //FIXME - can work with StupidObject only :)
+    return std::make_pair(10, 10);
 };
 
 std::vector<Dot> ExtractDots(GameObject object)
-//Extracts vector of dots from map of components
+//Extracts vector of dots from GameObject
 {
-    //FIXME
+    if (IsIn("Collider", object.ComponentsVector)){
+        return object.dots_list;
+    }
+    //FIXME - can work with StupidObject only :)
+    std::vector<Dot> EmptyAnswer;
+    return EmptyAnswer;
 }
 
 void MoveDots()
 //This one moves all dots of all objects. And also will be RotateObjects. It will start working after move is done.
 {
-    std::vector<GameObject> ObjectVector = resourses.Objects;
-    float TimePassed = resourses.CurrentFrameTime - resourses.LastFrameTime;
+    std::vector<GameObject> ObjectVector = resources.Objects;
+    float TimePassed = resources.CurrentFrameTime - resources.LastFrameTime;
     for (int i = 0; i < ObjectVector.size(); i++)
     {
         GameObject CurrentObject = ObjectVector[i];
@@ -55,8 +75,22 @@ void RotateObjects()
     //FIXME
 }
 
-void MoveColliders()
-//Calls MoveDots and RotateObjects and checks everything in case of collisions
+void CheckForces()
+//Find all forces, affecting all objects, and changes their speed
 {
     //FIXME
+}
+
+void CheckCollisions()
+//Find and resolve collisions
+{
+    //FIXME
+}
+
+void MoveColliders()
+//MoveDots and RotateObjects and checks everything in case of collisions. Also will contain Gravity and some effects
+{
+    CheckForces();
+    MoveDots();
+    CheckCollisions();
 }
