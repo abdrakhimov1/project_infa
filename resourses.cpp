@@ -5,13 +5,20 @@
 class Resources
 {
 private:
-    Resources() {}
+    Resources()
+    {
+        window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME");
+    }
     Resources( const Resources&);
 
 public:
 
     std::vector<GameObject> Objects;
-    sf::RenderWindow window(sf::VideoMode mode, const std::string name);
+    sf::RenderWindow* window;
+
+    sf::RenderWindow& getWindow() {
+        return *window;
+    }
     float CurrentFrameTime;
     float LastFrameTime;
 
