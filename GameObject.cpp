@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <iostream>
+#include <cstring>
 #include "Components.cpp"
 
 
@@ -26,10 +27,14 @@ public:
     }
 
     template <typename T>
-    T getComponent(){
+    T& getComponent(){
         for(int i =0; i < componentsList.size(); i++){
-            if (typeid(componentsList[i]).name() == typeid(T).name()){
-                T *subClass = dynamic_cast<T* >(componentsList[i]);
+
+            std::cout << componentsList[0] -> typeID; //FIXME
+
+
+            if(strcmp(componentsList[i] -> typeID, typeid(T).name()) == 0) {
+                T *subClass = dynamic_cast<T*>(componentsList[i]);
                 return *subClass;
             }
         }

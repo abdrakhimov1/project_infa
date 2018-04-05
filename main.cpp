@@ -17,12 +17,10 @@ int main(){
     GameObject object;
 
     object.addComponent<RigidBody>();
+    //std::cout << "a"  << std::endl;
 
-
-    object.getComponent<RigidBody>().a = 15;
-    int b = object.getComponent<RigidBody>().a;
-    std::cout << b << std::endl;
-    std::cout << typeid(object.getComponent<RigidBody>().a).name() << std::endl;
+    object.getComponent<RigidBody>();
+    //int b = object.getComponent<RigidBody>().a;
 
 
 

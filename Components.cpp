@@ -9,8 +9,7 @@ class AbstractComponent{
 public:
     virtual ~AbstractComponent(){}
     virtual void make() = 0;
-
-    const char* typeID = typeid(*this).name();
+    char* typeID;
 };
 
 
@@ -19,7 +18,8 @@ public:
     RigidBody(){}
     ~RigidBody(){}
     std::pair<float, float> speed;
-    int a = 2;
     void make(){}
+    char *typeID = (char*) typeid(*this).name();
+    int a = 12;
 };
 
