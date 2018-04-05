@@ -4,6 +4,8 @@
 
 #include <vector>
 #include <iostream>
+#include "Components.cpp"
+
 
 class Dot{
 public:
@@ -13,51 +15,35 @@ public:
     std::pair < float, float > crs;
 };
 
-class abstractGameObject{
+class GameObject{
 public:
-    virtual ~abstractGameObject(){}
-    virtual void init() = 0;
-};
+    std::vector<AbstractComponent*> componentsList;
 
-class SimpleGameObject : public abstractGameObject{
-public:
-    ~SimpleGameObject(){
-
+    template <typename T>
+    void addComponent(){
+        T *prop = new T;
+        componentsList.push_back(prop);
     }
-    void init(){
 
-    }
-};
-
-
-class GameObject : public abstractGameObject{
-public:
-    GameObject(abstractGameObject *inner){
-        m_wrappee = inner;
-    }
-    ~GameObject(){
-        delete m_wrappee;
-    }
-    virtual void init(){
-        m_wrappee -> init();
-
-    }
-    private:
-    abstractGameObject *m_wrappee;
-};
-
-class GameObjectWithRigidBody : public GameObject{
-public:
-    GameObjectWithRigidBody(abstractGameObject *core) : GameObject(core){}
-    ~GameObjectWithRigidBody(){}
-    void init(){
-        GameObject::init();
-        std::pair< float , float > speed;
-        std::cout << "RigidBody" << std::endl;
+    template <typename T>
+    T getComponent(){
+        for(int i =0; i < componentsList.size(); i++){
+            if (typeid(componentsList[i]).name() == typeid(T).name()){
+                T *subClass = dynamic_cast<T* >(componentsList[i]);
+                return *subClass;
+            }
         }
-
+    }
 };
 
+
+
+
+
+
+
+
+/*
 class GameObjectWithCollider : public GameObject{
 public:
     GameObjectWithCollider(abstractGameObject *core ) : GameObject(core){}
@@ -66,14 +52,14 @@ public:
         GameObject::init();
         std::vector<Dot> dots_list;
         std::cout << "Collider" << std::endl;
-        /*
+
         void Add_dot(Dot dot, std::vector<Dot> dots_list){
             dots_list.push_back(dot);
         }
         bool Detect(float dotX, float dotY, float X0, float Y0, float X1, float Y1){
             float d = (dotX - X0) * (Y1 - Y0) - (dotY - Y0) * (X1 - X0);
             return d > 0;
-        }*/
+        }
     }
 
 
@@ -87,17 +73,11 @@ public:
     void DrawMe(){
         //FIXME
     }
-
-
-
     void init(){
         GameObject::init();
         std::cout << "DrawMe" << std::endl;
         int b;
     }
-
-
 };
 
-
-
+*/
