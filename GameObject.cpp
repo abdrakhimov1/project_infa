@@ -2,40 +2,25 @@
 // Created by ruby on 22.03.18.
 //
 
-#include <vector>
-#include <iostream>
-#include <cstring>
-#include "Components.cpp"
+#include "Dot.h"
+#include "GameObject.h"
 
-
-class Dot{
-public:
-    Dot(float x, float y){
-        crs = std::make_pair(x, y);
-    }
-    std::pair < float, float > crs;
-};
-
-class GameObject{
-public:
-    std::vector<AbstractComponent*> componentsList;
-
-    template <typename T>
-    void addComponent(){
+template <typename T>
+void GameObject::addComponent(){
         T *prop = new T;
         componentsList.push_back(prop);
     }
 
-    template <typename T>
-    T& getComponent(){
+template <typename T>
+T& GameObject::getComponent(){
         for(int i =0; i < componentsList.size(); i++){
             if(strcmp(componentsList[i] -> typeID, typeid(T).name()) == 0) {
                 T *subClass = dynamic_cast<T*>(componentsList[i]);
                 return *subClass;
             }
         }
-    }
-};
+}
+
 
 /*
 

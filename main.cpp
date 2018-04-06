@@ -4,13 +4,9 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <utility>
-#include "GameObject.cpp"
-
-//#include "resourses.cpp"
-//#include "Physics.cpp"
-
-
-
+#include "resources.h"
+#include "Physics.h"
+#include "Dot.h"
 
 int main(){
 
