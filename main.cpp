@@ -17,10 +17,15 @@ int main(){
     GameObject object;
 
     object.addComponent<RigidBody>();
-    //std::cout << "a"  << std::endl;
+    object.addComponent<Collider>();
 
-    object.getComponent<RigidBody>();
-    //int b = object.getComponent<RigidBody>().a;
+
+
+    object.getComponent<RigidBody>().a = 10;
+    int b = object.getComponent<RigidBody>().a;
+    int c = object.getComponent<Collider>().k;
+    std::cout << c << std::endl;
+    std::cout << b << std::endl;
 
 
 

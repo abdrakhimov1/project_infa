@@ -9,17 +9,30 @@ class AbstractComponent{
 public:
     virtual ~AbstractComponent(){}
     virtual void make() = 0;
-    char* typeID;
+    const char* typeID;
 };
 
 
 class RigidBody : public AbstractComponent{
 public:
-    RigidBody(){}
+    RigidBody(){typeID = (char*) typeid(*this).name();}
     ~RigidBody(){}
-    std::pair<float, float> speed;
     void make(){}
-    char *typeID = (char*) typeid(*this).name();
-    int a = 12;
+    std::pair<float, float> speed;
+    float mass;
 };
+
+class Collider : public AbstractComponent{
+public:
+    Collider(){typeID = (char*) typeid(*this).name();}
+    ~Collider(){}
+    void make(){}
+    std::vector<Dot> dotsList;
+    Dot massCentre;
+    void Add_dot(Dot dot, std::vector<Dot> dots_list){
+        dots_list.push_back(dot);
+    }
+};
+
+
 
