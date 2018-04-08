@@ -26,7 +26,7 @@ public:
     void make();
     std::pair<float, float> speed;
     float mass;
-    int a = 12;
+    float momentOfInertion;
 };
 
 class Collider : public AbstractComponent{
@@ -37,7 +37,7 @@ public:
     std::vector<Dot> dotsList;
     Dot massCentre;
     void Add_dot(Dot dot, std::vector<Dot> dots_list);
-    int k = 11;
+    float cellRadius;
 };
 
 #endif //PROJECT_INFA_COMPONENTS_H

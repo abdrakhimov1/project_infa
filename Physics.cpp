@@ -67,12 +67,15 @@ void ElasticCollision(GameObject Object1, GameObject Object2){
     std::pair<std::pair<float, float>, std::pair<float, float>> NewBasis = FindNewBasisForCollision(Object1, Object2);
     Object1.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(Object1.getComponent<RigidBody>().speed, NewBasis);
     Object2.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(Object2.getComponent<RigidBody>().speed, NewBasis);
-    float P0 = std::get<0>(Object1.getComponent<RigidBody>().speed)*Object1.getComponent<RigidBody>().mass +
-            std::get<0>(Object2.getComponent<RigidBody>().speed)*Object2.getComponent<RigidBody>().mass;
-    float E0 = (std::pow(std::get<0>(Object1.getComponent<RigidBody>().speed), 2) +
-            std::pow(std::get<1>(Object1.getComponent<RigidBody>().speed), 2))*Object1.getComponent<RigidBody>().mass +
-            (std::pow(std::get<0>(Object2.getComponent<RigidBody>().speed), 2) +
-                    std::pow(std::get<1>(Object2.getComponent<RigidBody>().speed), 2))*Object2.getComponent<RigidBody>().mass;
+    Vx1 = std::get<0>(Object1.getComponent<RigidBody>().speed);
+    Vy1 = std::get<1>(Object1.getComponent<RigidBody>().speed);
+    m1 = Object1.getComponent<RigidBody>().mass;
+    Vx2 = std::get<0>(Object2.getComponent<RigidBody>().speed);
+    Vy2 = std::get<1>(Object2.getComponent<RigidBody>().speed);
+    m2 = Object2.getComponent<RigidBody>().mass;
+    float P0 = Vx1*m1 + Vx2*m2;
+    float E0 = m1*std::pow(Vx1, 2) + m2*std::pow(Vx2, 2);
+
     //FIXME - here must be solution of equation system, but I dunno one of needed conditions
     };
 //Model of elastic collision
@@ -103,10 +106,18 @@ void CheckCollisions(){
     std::vector<GameObject> objects = Resources::getInstance().Objects;
     for (int i = 0; i < objects.size(); i++) {
         if (IsIn<Collider>(objects[i])) {
+            float xc1 = std::get<0>(objects[i].getComponent<Collider>().massCentre.crs);
+            float yc1 = std::get<1>(objects[i].getComponent<Collider>().massCentre.crs);
+            float r1 = objects[i].getComponent<Collider>().cellRadius;
             for (int j = i + 1; j < objects.size(); j++) {
                 if (IsIn<Collider>(objects[j])) {
-                    if (TheyCollided(objects[i], objects[j]))
-                        SolveCollision(objects[i], objects[j]);
+                    float xc2 = std::get<0>(objects[j].getComponent<Collider>().massCentre.crs);
+                    float yc2 = std::get<1>(objects[j].getComponent<Collider>().massCentre.crs);
+                    float r2 = objects[j].getComponent<Collider>().cellRadius;
+                    if (std::sqrt(std::pow(xc2 - xc1, 2) + std::pow(yc2 - yc1, 2)) < r1 + r2) {
+                        if (TheyCollided(objects[i], objects[j]))
+                            SolveCollision(objects[i], objects[j]);
+                    }
                 }
             }
         }
