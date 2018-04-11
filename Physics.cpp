@@ -2,14 +2,16 @@
 // Created by fantom on 22.03.18.
 //
 
-#include <iostream>
-#include <cmath>
+#include "allLibrares.h"
+#include "WorkWithPairs.h"
 #include "Dot.h"
-#include "Physics.h"
+#include "Components.h"
+#include "GameObject.h"
 #include "IsIn.h"
 #include "resources.h"
 #include "Extractors.h"
 #include "AnaliticGeometry.h"
+#include "Physics.h"
 
 void MoveObject(GameObject CurrentObject, float TimePassed){
     std::pair<float, float> CurrentSpeed = ExtractSpeed(CurrentObject);
@@ -27,39 +29,42 @@ void MoveObject(GameObject CurrentObject, float TimePassed){
 void RotateObject(GameObject object, float TimePassed){
     //FIXME
 };
-//Rotate object. Now unavailable
+//Rotate object. Now unavailable. Quaternions?
 
 void CheckForces(){
     //FIXME
 };
-//Find all forces, affecting all objects, and changes their speed. Now unavailable
+//Find all forces, affecting all objects, and changes their speed. Now unavailable. Use it it collisions?
 
 bool TheyCollided(GameObject Object1, GameObject Object2){
-    int counter = 1;
+    int counter = 0;
     float x, y, x0, y0, x1, y1, a = 0, b = 0;       //y = a*x + b
-    for (int i = 0; i < Object1.getComponent<Collider>().dotsList.size(); i++){
-        if (i == Object1.getComponent<Collider>().dotsList.size() - 1){
-            x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[0].crs);
-            y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[0].crs);
-        }
-        else{
-            x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
-            y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
-        }
-        x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i].crs);
-        y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i].crs);
-        if (x1 != x0) {
-            a = (y1 - y0) / (x1 - x0);
-            b = (y0 * x1 - y1 * x0);
-        }
-        for (int j = 0; j < Object2.getComponent<Collider>().dotsList.size(); j++){
-            x = std::get<0>(Object2.getComponent<Collider>().dotsList[j].crs);
-            y = std::get<1>(Object2.getComponent<Collider>().dotsList[j].crs);
-            if (x1 != x0 and (y - (a*x + b))*(x1 - x0) < 0) counter++;
-            if (x1 == x0 and (x - x0)*(y1 - y0) < 0) counter++;
+    for (int j = 0; j < Object2.getComponent<Collider>().dotsList.size(); j++){
+        x = std::get<0>(Object2.getComponent<Collider>().dotsList[j].crs);
+        y = std::get<1>(Object2.getComponent<Collider>().dotsList[j].crs);
+        if (Object2.getComponent<Collider>().dotsList[j] - Object1.getComponent<Collider>().massCentre <
+                Object1.getComponent<Collider>().cellRadius) {
+            for (int i = 0; i < Object1.getComponent<Collider>().dotsList.size(); i++) {
+                if (i == Object1.getComponent<Collider>().dotsList.size() - 1) {
+                    x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[0].crs);
+                    y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[0].crs);
+                } else {
+                    x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
+                    y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
+                }
+                x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i].crs);
+                y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i].crs);
+                if (x1 != x0) {
+                    a = (y1 - y0) / (x1 - x0);
+                    b = (y0 * x1 - y1 * x0);
+                }
+                if (x1 != x0 and (y - (a * x + b)) * (x1 - x0) < 0) counter++;
+                if (x1 == x0 and (x - x0) * (y1 - y0) < 0) counter++;
+            }
+            if (counter == Object1.getComponent<Collider>().dotsList.size()) return true;
         }
     }
-    return counter == Object1.getComponent<Collider>().dotsList.size();
+    return false;
 };
 //Inspect if two given objects have collided. Can work with convex collider.
 
@@ -67,12 +72,12 @@ void ElasticCollision(GameObject Object1, GameObject Object2){
     std::pair<std::pair<float, float>, std::pair<float, float>> NewBasis = FindNewBasisForCollision(Object1, Object2);
     Object1.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(Object1.getComponent<RigidBody>().speed, NewBasis);
     Object2.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(Object2.getComponent<RigidBody>().speed, NewBasis);
-    Vx1 = std::get<0>(Object1.getComponent<RigidBody>().speed);
-    Vy1 = std::get<1>(Object1.getComponent<RigidBody>().speed);
-    m1 = Object1.getComponent<RigidBody>().mass;
-    Vx2 = std::get<0>(Object2.getComponent<RigidBody>().speed);
-    Vy2 = std::get<1>(Object2.getComponent<RigidBody>().speed);
-    m2 = Object2.getComponent<RigidBody>().mass;
+    float Vx1 = std::get<0>(Object1.getComponent<RigidBody>().speed);
+    float Vy1 = std::get<1>(Object1.getComponent<RigidBody>().speed);
+    float m1 = Object1.getComponent<RigidBody>().mass;
+    float Vx2 = std::get<0>(Object2.getComponent<RigidBody>().speed);
+    float Vy2 = std::get<1>(Object2.getComponent<RigidBody>().speed);
+    float m2 = Object2.getComponent<RigidBody>().mass;
     float P0 = Vx1*m1 + Vx2*m2;
     float E0 = m1*std::pow(Vx1, 2) + m2*std::pow(Vx2, 2);
 
@@ -80,6 +85,7 @@ void ElasticCollision(GameObject Object1, GameObject Object2){
     };
 //Model of elastic collision
 //FIXME - must consider geometry and rotation
+
 
 void NonElasticCollision(GameObject Object1, GameObject Object2){
     //FIXME

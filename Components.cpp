@@ -1,7 +1,10 @@
 //
 // Created by ruby on 05.04.18.
 //
-
+#include <vector>
+#include <typeinfo>
+#include <iostream>
+#include "Dot.h"
 #include "Components.h"
 
 AbstractComponent::~AbstractComponent() {}

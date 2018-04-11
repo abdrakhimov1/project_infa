@@ -1,7 +1,7 @@
 //
 // Created by fantom on 06.04.18.
 //
-
+#include "WorkWithPairs.h"
 #include "Dot.h"
 
 Dot::Dot(float x, float y){

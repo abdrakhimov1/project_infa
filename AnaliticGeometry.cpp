@@ -1,7 +1,8 @@
 //
 // Created by fantom on 06.04.18.
 //
-
+#include "WorkWithPairs.h"
+#include "GameObject.h"
 #include "AnaliticGeometry.h"
 #include <cmath>
 
@@ -16,8 +17,8 @@ std::pair<float, float> FindVectorCoordinatesInNewBasis(std::pair<float, float> 
     x2 = std::get<1>(X);
     y1 = std::get<0>(Y);
     y2 = std::get<1>(Y);
-    Vy1 = (Vy0*x1 - Vx0*y1)/(x1*y2 - x2*y1);
-    Vx1 = Vx0/x1 - Vy1*x2/x1;
+    Vy1 = (Vy0*x1 - Vx0*x2)/(x1*y2 - x2*y1);
+    Vx1 = Vx0/x1 - Vy1*y1/x1;
     Vector = std::make_pair(Vx1, Vy1);
     return Vector;
 };
@@ -44,3 +45,13 @@ std::pair<std::pair<float, float>, std::pair<float, float>> FindNewBasisForColli
     return std::make_pair(X, Y);
 };
 //This one too
+
+float operator-(Dot dot1, Dot dot2){
+    float x1, y1, x2, y2, distance;
+    x1 = std::get<0>(dot1.crs);
+    y1 = std::get<1>(dot1.crs);
+    x2 = std::get<0>(dot2.crs);
+    y2 = std::get<1>(dot2.crs);
+    distance = std::sqrt(std::pow(x1 - x2, 2) + std::pow(y1 - y2, 2));
+    return distance;
+}

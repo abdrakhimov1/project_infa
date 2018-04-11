@@ -5,10 +5,6 @@
 #ifndef PROJECT_INFA_GAMEOBJECT_H
 #define PROJECT_INFA_GAMEOBJECT_H
 
-#include <vector>
-#include "Components.h"
-#include <cstring>
-
 class GameObject{
 public:
     std::vector<AbstractComponent*> componentsList;

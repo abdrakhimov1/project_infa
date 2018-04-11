@@ -2,11 +2,6 @@
 // Created by fantom on 06.04.18.
 //
 
-#include <vector>
-#include <typeinfo>
-#include <iostream>
-#include "Dot.h"
-
 #ifndef PROJECT_INFA_COMPONENTS_H
 #define PROJECT_INFA_COMPONENTS_H
 

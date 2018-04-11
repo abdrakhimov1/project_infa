@@ -2,6 +2,9 @@
 // Created by ruby on 22.03.18.
 //
 
+#include <vector>
+#include <cstring>
+#include "Components.h"
 #include "Dot.h"
 #include "GameObject.h"
 

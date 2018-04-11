@@ -1,9 +1,12 @@
 //
 // Created by fantom on 06.04.18.
 //
-
-#include "Extractors.h"
+#include "GameObject.h"
+#include "WorkWithPairs.h"
+#include <vector>
+#include "Dot.h"
 #include "IsIn.h"
+#include "Extractors.h"
 
 std::pair<float, float> ExtractSpeed(GameObject object) {
     std::pair<float, float> speed;
