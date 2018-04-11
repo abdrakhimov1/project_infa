@@ -1,33 +1,19 @@
 //
 // Created by ruby on 22.03.18.
 //
-#include <SFML/Graphics.hpp>
-#include <vector>
-#include <utility>
-#include "GameObject.cpp"
 
-//#include "resourses.cpp"
-//#include "Physics.cpp"
-
-
-
+#include "allLibrares.h"
+#include "WorkWithPairs.h"
+#include "Dot.h"
+#include "Components.h"
+#include "GameObject.h"
+#include "IsIn.h"
+#include "resources.h"
+#include "Extractors.h"
+#include "AnaliticGeometry.h"
+#include "Physics.h"
 
 int main(){
-
-    GameObject object;
-
-    object.addComponent<RigidBody>();
-    object.addComponent<Collider>();
-
-
-
-    object.getComponent<RigidBody>().a = 10;
-    int b = object.getComponent<RigidBody>().a;
-    int c = object.getComponent<Collider>().k;
-    std::cout << c << std::endl;
-    std::cout << b << std::endl;
-
-
 
     return 0;
 }

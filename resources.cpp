@@ -2,8 +2,6 @@
 // Created by ruby on 22.03.18.
 //
 
-#include <SFML/Graphics.hpp>
-#include "GameObject.h"
 #include "resources.h"
 
 Resources::Resources(){

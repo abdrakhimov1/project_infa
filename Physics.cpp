@@ -80,8 +80,12 @@ void ElasticCollision(GameObject Object1, GameObject Object2){
     float m2 = Object2.getComponent<RigidBody>().mass;
     float P0 = Vx1*m1 + Vx2*m2;
     float E0 = m1*std::pow(Vx1, 2) + m2*std::pow(Vx2, 2);
-
-    //FIXME - here must be solution of equation system, but I dunno one of needed conditions
+    std::pair<float, float> newObjectsXSpeeds = solveEqulationSystem(P0, E0, m1, m2, Vx2);
+    Vx1 = std::get<0>(newObjectsXSpeeds);
+    Vx2 = std::get<1>(newObjectsXSpeeds);
+    std::pair<std::pair<float, float>, std::pair<float, float>> oldBasis = findMainBasisCoords(NewBasis);
+    Object1.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(std::make_pair(Vx1, Vy1), oldBasis);
+    Object2.getComponent<RigidBody>().speed = FindVectorCoordinatesInNewBasis(std::make_pair(Vx2, Vy2), oldBasis);
     };
 //Model of elastic collision
 //FIXME - must consider geometry and rotation

@@ -2,6 +2,9 @@
 // Created by fantom on 06.04.18.
 //
 
+#include "GameObject.h"
+#include "allLibrares.h"
+
 #ifndef PROJECT_INFA_RESOURCES_H
 #define PROJECT_INFA_RESOURCES_H
 

@@ -2,6 +2,8 @@
 // Created by fantom on 06.04.18.
 //
 
+#include "Dot.h"
+#include "allLibrares.h"
 #ifndef PROJECT_INFA_COMPONENTS_H
 #define PROJECT_INFA_COMPONENTS_H
 

@@ -2,8 +2,7 @@
 // Created by fantom on 05.04.18.
 //
 
-#include <utility>
-#include <iostream>
+#include "WorkWithPairs.h"
 
 std::pair<float, float> operator+(std::pair<float, float> FirstPair, std::pair<float, float> SecondPair){
     float TMP1 = std::get<0>(FirstPair) + std::get<0>(SecondPair);
@@ -16,5 +15,3 @@ std::pair<float, float> operator*(std::pair<float, float> Pair, float Number){
     float TMP2 = std::get<1>(Pair)*Number;
     return std::make_pair(TMP1, TMP2);
 };
-
-#include "WorkWithPairs.h"

@@ -2,10 +2,10 @@
 // Created by fantom on 05.04.18.
 //
 
+#include <utility>
+
 #ifndef PROJECT_WORKWITHPAIRS_H
 #define PROJECT_WORKWITHPAIRS_H
-
-#include <utility>
 
 std::pair<float, float> operator+(std::pair<float, float> FirstPair, std::pair<float, float> SecondPair);
 

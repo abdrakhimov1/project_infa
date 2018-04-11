@@ -1,10 +1,9 @@
 //
 // Created by fantom on 06.04.18.
 //
-#include "WorkWithPairs.h"
-#include "GameObject.h"
+
 #include "AnaliticGeometry.h"
-#include <cmath>
+
 
 std::pair<float, float> FindVectorCoordinatesInNewBasis(std::pair<float, float> Vector,
                                                         std::pair<std::pair<float, float>, std::pair<float, float>> NewBasis){
@@ -55,3 +54,25 @@ float operator-(Dot dot1, Dot dot2){
     distance = std::sqrt(std::pow(x1 - x2, 2) + std::pow(y1 - y2, 2));
     return distance;
 }
+
+std::pair<std::pair<float, float>, std::pair<float, float>> findMainBasisCoords(std::pair<std::pair<float, float>, std::pair<float, float>> Basis){
+    std::pair<float, float> X = std::get<0>(Basis);
+    std::pair<float, float> Y = std::get<1>(Basis);
+    float x1, y1, x2, y2;
+    x1 = std::get<0>(X);
+    y1 = std::get<1>(X);
+    x2 = std::get<0>(Y);
+    y2 = std::get<1>(Y);
+    Y = std::make_pair(-1*x2/(y2*x1 - y1*x2), x1/(y2*x1 - y1*x2));
+    X = std::make_pair(y2/(y2*x1 - y1*x2), -1*y1/(y2*x1 - y1*x2));
+    return std::make_pair(X, Y);
+};
+
+std::pair<float, float> solveEqulationSystem(float P0, float E0, float m1, float m2, float Vx2_0){
+    float D = std::pow(m2*P0, 2) - (std::pow(m2, 2) + m1*m2)*(std::pow(P0, 2) - E0*m1);
+    assert (D > 0);
+    float Vx2 = (m2*P0 + std::sqrt(D))/(std::pow(m2, 2) + m1*m2);
+    if (Vx2_0 - Vx2 < 0) Vx2 = (m2*P0 - std::sqrt(D))/(std::pow(m2, 2) + m1*m2);
+    float Vx1 = (P0 - m2*Vx2)/m1;
+    return std::make_pair(Vx1, Vx2);
+};
