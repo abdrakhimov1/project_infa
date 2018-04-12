@@ -12,8 +12,21 @@
 #include "Extractors.h"
 #include "AnaliticGeometry.h"
 #include "Physics.h"
+#include "Game.h"
 
 int main(){
+
+    GameObject obj;
+    GameObject obj2;
+
+    obj.addComponent<Script>();
+    obj2.addComponent<specialScript>();
+
+    obj.getComponent<Script>().update();
+    obj2.getComponent<specialScript>().update();
+
+
+
 
     return 0;
 }
