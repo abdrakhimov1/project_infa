@@ -37,4 +37,15 @@ public:
     float cellRadius;
 };
 
+class Script : public AbstractComponent{
+public:
+    Script();
+    ~Script();
+    void make();
+
+    void update(){
+        std::cout << "check" << std::endl;
+    }
+};
+
 #endif //PROJECT_INFA_COMPONENTS_H

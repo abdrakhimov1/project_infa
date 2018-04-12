@@ -21,6 +21,15 @@ void Collider::make() {}
 void Collider::Add_dot(Dot dot, std::vector <Dot> dots_list){
     dots_list.push_back(dot);
 }
+
+Script::Script() {typeID = (char*) typeid(*this).name();}
+
+Script::~Script() {}
+
+void Script::make() {}
+
+
+
 /*
 class AbstractComponent{
 public:
