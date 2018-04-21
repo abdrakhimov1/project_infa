@@ -7,7 +7,7 @@
 Resources::Resources(){
 
     sf::ContextSettings settings;
-    settings.antialisingLevel = 8;
+    settings.antialiasingLevel = 8;
     window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME", sf::Style::Default, settings);
 }
 

@@ -19,12 +19,16 @@ int main(){
     GameObject obj;
     GameObject obj2;
 
-    obj.addComponent<Script>();
-    obj2.addComponent<specialScript>();
+    //obj.addComponent<Script>();
+    //obj2.addComponent<specialScript>();
+    obj.addComponent<Factory>();
 
-    obj.getComponent<Script>().update();
-    obj2.getComponent<specialScript>().update();
+    //obj.getComponent<Script>().update();
+    //obj2.getComponent<specialScript>().update();
 
+
+    obj.getComponent<Factory>().update();
+    obj.getComponent<Factory>().createPlane();
 
 
 

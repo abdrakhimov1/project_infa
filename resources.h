@@ -2,7 +2,7 @@
 // Created by fantom on 06.04.18.
 // Modified by verwindle on 07.04.18.
 //
-#include "allLibrares"
+#include "allLibrares.h"
 #include "GameObject.h"
 #ifndef PROJECT_INFA_RESOURCES_H
 #define PROJECT_INFA_RESOURCES_H
@@ -19,8 +19,8 @@ public:
     sf::RenderWindow* window;
 
     sf::RenderWindow& getWindow();
-    void clearWindow(getWindow());
-    void displayWindow(getWindow());
+    void clearWindow();
+    void displayWindow();
 
     float CurrentFrameTime;
     float LastFrameTime;

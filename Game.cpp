@@ -4,4 +4,11 @@
 
 #include "Game.h"
 
-specialScript::specialScript() {typeID = (char*) typeid(*this).name();}
+specialScript::specialScript() {
+    typeID = (char*) typeid(*this).name();
+}
+
+Factory::Factory()
+{
+    typeID = (char*) typeid(*this).name();
+}
