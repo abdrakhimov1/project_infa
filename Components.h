@@ -44,7 +44,7 @@ public:
     void make();
 
     void update(){
-        std::cout << "check" << std::endl;
+
     }
 };
 

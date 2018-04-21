@@ -5,6 +5,7 @@
 #include "allLibrares.h"
 #include "Components.h"
 #include "resources.h"
+#include "allLibrares.h"
 
 
 
@@ -17,7 +18,7 @@ public:
     ~specialScript() {};
 
     void update(){
-        std::cout << "specialObject" << std::endl;
+
     }
 
 };
@@ -26,15 +27,22 @@ class Factory : public Script{
 public:
     Factory();
 
-    void createPlane(){
+    static GameObject createPlane(){
+
         GameObject plane;
         Resources::getInstance().addObject(plane);
-        std::cout << "Plane built" << std::endl;
-
+        return plane;
     };
 
     void update(){
         std::cout << "Factory built" << std::endl;
+    }
+
+    static void addRigidBody(GameObject object, float speedX, float speedY){
+        object.addComponent<RigidBody>();
+        object.getComponent<RigidBody>().speed.first = speedX;
+        object.getComponent<RigidBody>().speed.first = speedY;
+
     }
 
 
