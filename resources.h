@@ -17,6 +17,8 @@ private:
 public:
     std::vector<GameObject> Objects;
 
+    sf::RenderWindow& getWindow();
+
     float CurrentFrameTime;
     float LastFrameTime;
 

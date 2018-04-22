@@ -1,6 +1,8 @@
 //
 // Created by verwindle on 12.04.18.
 //
+#include "allLibraries.h"
+#include "Dot.h"
 
 #ifndef PROJECT_INFA_SPRITE_H
 #define PROJECT_INFA_SPRITE_H
@@ -17,7 +19,7 @@ public:
     Sprite();
 
     const std::string obj_name;
-    sf::Texture setTexture( );
+    sf::Texture setTexture();
   
     std::vector<Dot> dots;
     //sf::Color Dan_favourite_color = sf::Color(7, 55, 221); sorry, Dan

@@ -1,5 +1,7 @@
 #include "ConverterPairToVector2.h"
 #include "Sprite.h"
+#include "WorkWithPairs.h"
+#include "Components.h"
 
 sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
     float crx = std::get<0>(coords);
@@ -10,10 +12,10 @@ sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
 }
 
 
-Sprite::setTexture() {
-    std::cout << "Type in the name of object";
-    std::cin >> obj_name;
-    texture = texture.loadFromFile(obj_name);
+sf::Texture Sprite::setTexture() {
+    //std::cout << "Type in the name of object"; 
+    //std::cin >> obj_name;
+    texture.loadFromFile(obj_name);
     return texture;
 }
 
@@ -28,7 +30,7 @@ Sprite::Sprite() {
     convex.setOutlineThickness(1); // collision mask
     convex.setOutlineColor(mask_color);
 
-    setTexture();
+    Sprite::setTexture();
     sprite.setTexture(texture);
     //sprite.setColor(Dan_favourite_color); // sorry, Dan
     Dot centre = DrawMe::setSpriteCentre();
@@ -38,7 +40,7 @@ Sprite::Sprite() {
 }
 
 void Sprite::draw() {
-    sf::RenderWindow& window = Resources::getInstance().getWindow();
+    sf::RenderWindow& window = Window::getWindow();
     while (window.isOpen()) {
         window.draw(this -> sprite);
     }

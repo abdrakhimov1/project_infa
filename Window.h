@@ -9,11 +9,11 @@
 class Window {
 protected:
     sf::RenderWindow* window;
-    Window();
-    
-public:
-    static sf::RenderWindow& getWindow();
 
+    Window();
+    sf::RenderWindow& getWindow();
+
+public:
     static void clearWindow();
 
     static void displayWindow();
