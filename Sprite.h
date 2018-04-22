@@ -1,7 +1,6 @@
 //
 // Created by verwindle on 12.04.18.
 //
-#include "GameObject"
 
 #ifndef PROJECT_INFA_SPRITE_H
 #define PROJECT_INFA_SPRITE_H
@@ -15,7 +14,7 @@ private:
     float mean_x;
     float mean_y;
 public:
-    Sprite(GameObject object);
+    Sprite();
 
     const std::string obj_name;
     sf::Texture setTexture( );
