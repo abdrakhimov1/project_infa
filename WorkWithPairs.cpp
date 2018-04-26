@@ -18,15 +18,19 @@ float getY(std::pair<float, float> pair) {
 std::pair<float, float> operator+(std::pair<float, float> FirstPair, std::pair<float, float> SecondPair){
     float TMP1 = getX(FirstPair) + getX(SecondPair);
     float TMP2 = getY(FirstPair) + getY(SecondPair);
-    std::pair<float, float> res = std::make_pair(TMP1, TMP2);
-    return res;
+    return std::make_pair(TMP1, TMP2);
 };
 
-std::pair<float, float > operator*(std::pair<float, float> Pair, float Number){
+std::pair<float, float> operator*(std::pair<float, float> Pair, float Number){
     float TMP1 = getX(Pair)*Number;
     float TMP2 = getY(Pair)*Number;
-    std::pair<float, float> res = std::make_pair(TMP1, TMP2);
-    return res;
+    return std::make_pair(TMP1, TMP2);
+};
+
+std::pair<float, float> operator/(std::pair<float, float> Pair, float Number){
+    float TMP1 = getX(Pair)/Number;
+    float TMP2 = getY(Pair)/Number;
+    return std::make_pair(TMP1, TMP2);
 };
 
 #include "WorkWithPairs.h"

@@ -1,7 +1,7 @@
 //
 // Created by fantom on 06.04.18.
 //
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "WorkWithPairs.h"
 
 #ifndef PROJECT_INFA_DOT_H

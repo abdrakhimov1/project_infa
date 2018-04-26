@@ -1,5 +1,13 @@
 #include "StupidDrawMe.h"
 
-DrawMe::DrawMe(Triangle triangle()) {typeID = (char*) typeid(*this).name();}
+StDrawMe::StDrawMe(Triangle triangle) {
+        Window::clearWindow();
+        triangle.draw();
+        Window::displayWindow();
+}
 
-DrawMe::~DrawMe() {};
+
+StDrawMe::~StDrawMe() {
+    Window::clearWindow();
+    Window::displayWindow();
+}

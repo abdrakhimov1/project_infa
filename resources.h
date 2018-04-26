@@ -2,25 +2,20 @@
 // Created by fantom on 06.04.18.
 // Modified by verwindle on 07.04.18.
 //
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "GameObject.h"
+#include "Window.h"
 #ifndef PROJECT_INFA_RESOURCES_H
 #define PROJECT_INFA_RESOURCES_H
 
-class Resources
+class Resources : public Window
 {
 private:
     Resources();
-    Resources( const Resources&);
+    Resources(const Resources&) : Window(){};
 
 public:
-
     std::vector<GameObject> Objects;
-    sf::RenderWindow* window;
-
-    sf::RenderWindow& getWindow();
-    void clearWindow();
-    void displayWindow();
 
     float CurrentFrameTime;
     float LastFrameTime;

@@ -3,25 +3,25 @@
 //
 
 #include "resources.h"
+Resources::Resources(){}
 
-Resources::Resources(){
+    Window::Window() {
+        sf::ContextSettings settings;
+        settings.antialiasingLevel = 8;
+        window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME", sf::Style::Default, settings);
+    }
 
-    sf::ContextSettings settings;
-    settings.antialiasingLevel = 8;
-    window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME", sf::Style::Default, settings);
+sf::RenderWindow& Window::getWindow(){
+    Resources::getInstance().window;
 }
 
-sf::RenderWindow& Resources::getWindow(){
-    return *window;
-}
-
-void Resources::clearWindow() {
-    sf::RenderWindow& window = getWindow();
+void Window::clearWindow() {
+    sf::RenderWindow& window = Window::getWindow();
     window.clear();
 }
 
-void Resources::displayWindow() {
-    sf::RenderWindow& window = getWindow();
+void Window::displayWindow() {
+    sf::RenderWindow& window = Window::getWindow();
     window.display();
 }
 
@@ -30,6 +30,6 @@ void Resources::addObject(GameObject object){
 }
 
 Resources& Resources::getInstance() {
-    static Resources  instance;
+    static Resources instance;
     return instance;
 }

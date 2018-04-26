@@ -15,4 +15,6 @@ std::pair<float, float> operator+(std::pair<float, float> FirstPair, std::pair<f
 
 std::pair<float, float> operator*(std::pair<float, float> Pair, float Number);
 
+std::pair<float, float> operator/(std::pair<float, float> Pair, float Number);
+
 #endif //PROJECT_WORKWITHPAIRS_H
