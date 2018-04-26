@@ -12,16 +12,16 @@ Resources::Resources(){}
     }
 
 sf::RenderWindow& Window::getWindow(){
-    return *window;
+    Resources::getInstance().window;
 }
 
 void Window::clearWindow() {
-    sf::RenderWindow& window = getWindow();
+    sf::RenderWindow& window = Window::getWindow();
     window.clear();
 }
 
 void Window::displayWindow() {
-    sf::RenderWindow& window = getWindow();
+    sf::RenderWindow& window = Window::getWindow();
     window.display();
 }
 

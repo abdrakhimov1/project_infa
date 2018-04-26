@@ -1,6 +1,6 @@
 #include "ConverterPairToVector2.h"
 #include "Sprite.h"
-#include "WorkWithPairs.h"
+#include "resources.h"
 #include "Components.h"
 
 sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
@@ -13,15 +13,15 @@ sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
 
 
 sf::Texture Sprite::setTexture() {
-    //std::cout << "Type in the name of object"; 
+    //std::cout << "Type in the name of object";
     //std::cin >> obj_name;
     texture.loadFromFile(obj_name);
     return texture;
 }
 
-Sprite::Sprite() {
+Sprite::Sprite(GameObject& object) {
     convex.setPointCount(quantity_of_dots);
-   std::vector<Dot> crs = DrawMe::setSpriteCoordinates();
+   std::vector<Dot> crs = object.getComponent<DrawMe>().setSpriteCoordinates();
     for (int i = 0; i < quantity_of_dots; i++) {
         sf::Vector2f coords = getVectorFromPair(crs[i].crs);
         convex.setPoint(i, coords);
@@ -32,8 +32,7 @@ Sprite::Sprite() {
 
     Sprite::setTexture();
     sprite.setTexture(texture);
-    //sprite.setColor(Dan_favourite_color); // sorry, Dan
-    Dot centre = DrawMe::setSpriteCentre();
+    Dot centre = object.getComponent<DrawMe>().setSpriteCentre();
     mean_x = getX(centre.crs);
     mean_y = getY(centre.crs);
     sprite.setPosition(mean_x, mean_y);

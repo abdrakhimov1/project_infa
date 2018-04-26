@@ -3,12 +3,16 @@
 //
 #include "allLibraries.h"
 #include "Dot.h"
+#include "WorkWithPairs.h"
 
 #ifndef PROJECT_INFA_SPRITE_H
 #define PROJECT_INFA_SPRITE_H
 
+class GameObject;
+
 class Sprite {
 private:
+
     sf::Sprite sprite;
     sf::ConvexShape convex;
     sf::Texture texture;
@@ -16,13 +20,12 @@ private:
     float mean_x;
     float mean_y;
 public:
-    Sprite();
+    Sprite(GameObject& object);
 
     const std::string obj_name;
     sf::Texture setTexture();
   
     std::vector<Dot> dots;
-    //sf::Color Dan_favourite_color = sf::Color(7, 55, 221); sorry, Dan
     int quantity_of_dots;
 
     std::vector<Dot> crs;
