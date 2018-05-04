@@ -122,7 +122,6 @@ CMakeFiles/project_infa.dir/main.cpp.o: ../AnaliticGeometry.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../Components.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../Dot.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../Extractors.h
-CMakeFiles/project_infa.dir/main.cpp.o: ../Game.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../GameObject.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../IsIn.h
 CMakeFiles/project_infa.dir/main.cpp.o: ../Physics.h

@@ -11,8 +11,8 @@ AnaliticGeometry.h
 /home/fantom/Projects/project_infa/AnaliticGeometry.h
 
 /home/fantom/Projects/project_infa/AnaliticGeometry.h
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
+allLibraries.h
+/home/fantom/Projects/project_infa/allLibraries.h
 WorkWithPairs.h
 /home/fantom/Projects/project_infa/WorkWithPairs.h
 Dot.h
@@ -59,8 +59,8 @@ GameObject.h
 /home/fantom/Projects/project_infa/GameObject.h
 WorkWithPairs.h
 /home/fantom/Projects/project_infa/WorkWithPairs.h
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
+allLibraries.h
+/home/fantom/Projects/project_infa/allLibraries.h
 Dot.h
 /home/fantom/Projects/project_infa/Dot.h
 IsIn.h
@@ -71,14 +71,12 @@ Game.h
 /home/fantom/Projects/project_infa/Game.h
 
 /home/fantom/Projects/project_infa/Game.h
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
+allLibraries.h
+/home/fantom/Projects/project_infa/allLibraries.h
 Components.h
 /home/fantom/Projects/project_infa/Components.h
 resources.h
 /home/fantom/Projects/project_infa/resources.h
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
 
 /home/fantom/Projects/project_infa/GameObject.cpp
 GameObject.h
@@ -97,12 +95,12 @@ IsIn.h
 /home/fantom/Projects/project_infa/IsIn.h
 GameObject.h
 /home/fantom/Projects/project_infa/GameObject.h
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
+allLibraries.h
+/home/fantom/Projects/project_infa/allLibraries.h
 
 /home/fantom/Projects/project_infa/Physics.cpp
-allLibrares.h
-/home/fantom/Projects/project_infa/allLibrares.h
+allLibraries.h
+/home/fantom/Projects/project_infa/allLibraries.h
 WorkWithPairs.h
 /home/fantom/Projects/project_infa/WorkWithPairs.h
 Dot.h
@@ -209,6 +207,8 @@ SFML/System.hpp
 -
 SFML/Window.hpp
 -
+mutex
+-
 
 /home/fantom/Projects/project_infa/main.cpp
 allLibraries.h
@@ -233,8 +233,6 @@ AnaliticGeometry.h
 /home/fantom/Projects/project_infa/AnaliticGeometry.h
 Physics.h
 /home/fantom/Projects/project_infa/Physics.h
-Game.h
-/home/fantom/Projects/project_infa/Game.h
 
 /home/fantom/Projects/project_infa/resources.cpp
 resources.h

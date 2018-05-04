@@ -34,7 +34,7 @@ void RotateObject(GameObject object, float TimePassed){
 void CheckForces(){
     //FIXME
 };
-//Find all forces, affecting all objects, and changes their speed. Now unavailable. Use it it collisions?
+//Find all forces, affecting all objects, and changes their speed. Now unavailable.
 
 bool TheyCollided(GameObject Object1, GameObject Object2){
     int counter = 0;
@@ -52,8 +52,8 @@ bool TheyCollided(GameObject Object1, GameObject Object2){
                     x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
                     y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
                 }
-                x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i].crs);
-                y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i].crs);
+                x0 = std::get<0>(Object1.getComponent<Collider>().dotsList[i].crs);
+                y0 = std::get<1>(Object1.getComponent<Collider>().dotsList[i].crs);
                 if (x1 != x0) {
                     a = (y1 - y0) / (x1 - x0);
                     b = (y0 * x1 - y1 * x0);
@@ -137,6 +137,9 @@ void CheckCollisions(){
 
 void MoveColliders(){
     while (Window::getWindow().isOpen()) {
+        Resources::getInstance().accessToResourses.lock();
+        Resources::getInstance().LastFrameTime = Resources::getInstance().CurrentFrameTime;
+        Resources::getInstance().CurrentFrameTime = Resources::getInstance().Timer.getElapsedTime().asSeconds();
         std::vector<GameObject> ObjectVector = Resources::getInstance().Objects;
         float TimePassed = Resources::getInstance().CurrentFrameTime - Resources::getInstance().LastFrameTime;
         CheckForces();
@@ -144,6 +147,7 @@ void MoveColliders(){
             MoveObject(ObjectVector[i], TimePassed);
         }
         CheckCollisions();
+        Resources::getInstance().accessToResourses.unlock();
     }
 };
 //MoveDots and RotateObjects and checks everything in case of collisions. Also will contain Gravity and some effects.

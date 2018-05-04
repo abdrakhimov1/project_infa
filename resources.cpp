@@ -5,24 +5,23 @@
 #include "resources.h"
 Resources::Resources(){}
 
-    Window::Window() {
-        sf::ContextSettings settings;
-        settings.antialiasingLevel = 8;
-        window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME", sf::Style::Default, settings);
-    }
+Window::Window() {
+    sf::ContextSettings settings;
+    settings.antialiasingLevel = 8;
+    window = new sf::RenderWindow(sf::VideoMode(1280, 960), "GAME", sf::Style::Default, settings);
+}
 
 sf::RenderWindow& Window::getWindow(){
-    Resources::getInstance().window;
+    static Window SevaHuesos;
+    return *SevaHuesos.window;
 }
 
 void Window::clearWindow() {
-    sf::RenderWindow& window = Window::getWindow();
-    window.clear();
+    Window::getWindow().clear();
 }
 
 void Window::displayWindow() {
-    sf::RenderWindow& window = Window::getWindow();
-    window.display();
+    Window::getWindow().display();
 }
 
 void Resources::addObject(GameObject object){

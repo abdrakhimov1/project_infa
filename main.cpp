@@ -40,5 +40,6 @@ int main(){
 
 
 */
+    MoveColliders();
     return 0;
 }
