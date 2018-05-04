@@ -176,6 +176,12 @@
 		<Unit filename="/home/fantom/Projects/project_infa/allLibraries.h">
 			<Option target="project_infa"/>
 		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/drawAll.cpp">
+			<Option target="project_infa"/>
+		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/drawAll.h">
+			<Option target="project_infa"/>
+		</Unit>
 		<Unit filename="/home/fantom/Projects/project_infa/main.cpp">
 			<Option target="project_infa"/>
 		</Unit>

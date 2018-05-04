@@ -15,39 +15,26 @@ RigidBody::~RigidBody() {}
 
 void RigidBody::make() {}
 
-DrawMe::DrawMe(GameObject& object, Sprite sprite) {
+DrawMe::DrawMe(GameObject& object) {
     typeID = (char*) typeid(*this).name();
     AbstractComponent::object = &object;
-
-    Window::clearWindow();
-    sprite.draw();
-    Window::displayWindow();
-    }
+}
 
 Dot DrawMe::setSpriteCentre() {
-    float mean_x = getX(object->getComponent<Collider>().calculateMassCentre().crs);
-    float mean_y = getY(object->getComponent<Collider>().calculateMassCentre().crs); // it's strange to get co-te from pair and then create pair again, I know
-    Dot centre = Dot(mean_x, mean_y);
-
-    return centre;
+    return object -> getComponent<Collider>().calculateMassCentre();
 }
 
 std::vector<Dot> DrawMe::setSpriteCoordinates() {
-    std::vector<Dot> crs = {};
-    std::vector<Dot> dots = object->getComponent<Collider>().dotsList;
-    for (int i = 0;i < dots.size();i++) {
-        float crx = getX(dots[i].crs); // crs stands for coordinates
-        float cry = getY(dots[i].crs);
-        Dot x_and_y = Dot(crx, cry);
-        crs.push_back(x_and_y);
-    }
-
-    return crs;
+    return object -> getComponent<Collider>().dotsList;
 }
 
 DrawMe::~DrawMe() {
-    Window::clearWindow();
-    Window::displayWindow();
+    //I donno what to do here
+}
+
+void DrawMe::Draw() {
+    Sprite sprite(*object);
+    sprite.draw();
 }
 
 Collider::Collider(GameObject& object) {

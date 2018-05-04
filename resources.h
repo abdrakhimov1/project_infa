@@ -9,12 +9,9 @@
 #ifndef PROJECT_INFA_RESOURCES_H
 #define PROJECT_INFA_RESOURCES_H
 
-class Resources : public Window
-{
+class Resources{
 private:
     Resources();
-    Resources(const Resources&) : Window(){};
-
 public:
     std::vector<GameObject> Objects;
     sf::Clock Timer;

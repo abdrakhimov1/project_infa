@@ -474,6 +474,33 @@ WorkWithPairs.cpp.s:
 	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/WorkWithPairs.cpp.s
 .PHONY : WorkWithPairs.cpp.s
 
+drawAll.o: drawAll.cpp.o
+
+.PHONY : drawAll.o
+
+# target to build an object file
+drawAll.cpp.o:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawAll.cpp.o
+.PHONY : drawAll.cpp.o
+
+drawAll.i: drawAll.cpp.i
+
+.PHONY : drawAll.i
+
+# target to preprocess a source file
+drawAll.cpp.i:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawAll.cpp.i
+.PHONY : drawAll.cpp.i
+
+drawAll.s: drawAll.cpp.s
+
+.PHONY : drawAll.s
+
+# target to generate assembly for a file
+drawAll.cpp.s:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawAll.cpp.s
+.PHONY : drawAll.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -576,6 +603,9 @@ help:
 	@echo "... WorkWithPairs.o"
 	@echo "... WorkWithPairs.i"
 	@echo "... WorkWithPairs.s"
+	@echo "... drawAll.o"
+	@echo "... drawAll.i"
+	@echo "... drawAll.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

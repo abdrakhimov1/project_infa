@@ -13,15 +13,13 @@ sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
 
 
 sf::Texture Sprite::setTexture() {
-    //std::cout << "Type in the name of object";
-    //std::cin >> obj_name;
     texture.loadFromFile(obj_name);
     return texture;
 }
 
 Sprite::Sprite(GameObject& object) {
     convex.setPointCount(quantity_of_dots);
-   std::vector<Dot> crs = object.getComponent<DrawMe>().setSpriteCoordinates();
+    std::vector<Dot> crs = object.getComponent<DrawMe>().setSpriteCoordinates();
     for (int i = 0; i < quantity_of_dots; i++) {
         sf::Vector2f coords = getVectorFromPair(crs[i].crs);
         convex.setPoint(i, coords);
@@ -33,9 +31,9 @@ Sprite::Sprite(GameObject& object) {
     Sprite::setTexture();
     sprite.setTexture(texture);
     Dot centre = object.getComponent<DrawMe>().setSpriteCentre();
-    mean_x = getX(centre.crs);
-    mean_y = getY(centre.crs);
-    sprite.setPosition(mean_x, mean_y);
+    std::get<0>(centre.crs) = getX(centre.crs);
+    std::get<1>(centre.crs) = getY(centre.crs);
+    sprite.setPosition(std::get<0>(centre.crs), std::get<1>(centre.crs));
 }
 
 void Sprite::draw() {

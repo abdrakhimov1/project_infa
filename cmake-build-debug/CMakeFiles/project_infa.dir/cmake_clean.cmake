@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o"
   "CMakeFiles/project_infa.dir/StupidRendering.cpp.o"
   "CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o"
+  "CMakeFiles/project_infa.dir/drawAll.cpp.o"
   "project_infa.pdb"
   "project_infa"
 )

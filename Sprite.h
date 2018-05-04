@@ -17,8 +17,6 @@ private:
     sf::ConvexShape convex;
     sf::Texture texture;
     Dot centre;
-    float mean_x;
-    float mean_y;
 public:
     Sprite(GameObject& object);
 

@@ -13,6 +13,7 @@
 #include "Sprite.h"
 #include "AnaliticGeometry.h"
 #include "Physics.h"
+#include "drawAll.h"
 //#include "Game.h"
 
 
@@ -40,6 +41,10 @@ int main(){
 
 
 */
-    MoveColliders();
+    std::thread drawing(drawAll);
+    std::thread physics(MoveColliders);
+
+    drawing.join();
+    physics.join();
     return 0;
 }

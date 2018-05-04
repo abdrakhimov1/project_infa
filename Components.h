@@ -33,11 +33,11 @@ public:
 
 class DrawMe : public AbstractComponent{
 public:
-    DrawMe(GameObject& object, Sprite sprite);
-
+    DrawMe(GameObject& object);
     Dot setSpriteCentre();
-
     std::vector<Dot> setSpriteCoordinates();
+
+    void Draw();
 
     ~DrawMe();
 };
