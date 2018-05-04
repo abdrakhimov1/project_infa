@@ -15,5 +15,6 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
+#include <mutex>
 
 #endif //PROJECT_INFA_ALLLIBRARES_H

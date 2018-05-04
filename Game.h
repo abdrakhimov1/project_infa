@@ -2,12 +2,9 @@
 // Created by ruby on 12.04.18.
 //
 
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "Components.h"
 #include "resources.h"
-#include "allLibrares.h"
-
-
 
 #ifndef PROJECT_INFA_GAME_H
 #define PROJECT_INFA_GAME_H

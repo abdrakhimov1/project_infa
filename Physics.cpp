@@ -2,7 +2,7 @@
 // Created by fantom on 22.03.18.
 //
 
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "WorkWithPairs.h"
 #include "Dot.h"
 #include "Components.h"
@@ -17,7 +17,7 @@ void MoveObject(GameObject CurrentObject, float TimePassed){
     std::pair<float, float> CurrentSpeed = ExtractSpeed(CurrentObject);
     std::vector<Dot> DotVector = ExtractDots(CurrentObject);
     std::pair<float, float> Movement = CurrentSpeed*TimePassed;
-    CurrentObject.getComponent<Collider>().massCentre.crs = CurrentObject.getComponent<Collider>().massCentre.crs + Movement;
+    CurrentObject.getComponent<Collider>().calculateMassCentre().crs = CurrentObject.getComponent<Collider>().calculateMassCentre().crs + Movement;
     for (int j = 0; j < DotVector.size(); j++) {
         std::pair<float, float> CurrentCoordinates = DotVector[j].crs;
         std::pair<float, float> NewCoordinates = CurrentCoordinates + Movement;
@@ -42,7 +42,7 @@ bool TheyCollided(GameObject Object1, GameObject Object2){
     for (int j = 0; j < Object2.getComponent<Collider>().dotsList.size(); j++){
         x = std::get<0>(Object2.getComponent<Collider>().dotsList[j].crs);
         y = std::get<1>(Object2.getComponent<Collider>().dotsList[j].crs);
-        if (Object2.getComponent<Collider>().dotsList[j] - Object1.getComponent<Collider>().massCentre <
+        if (Object2.getComponent<Collider>().dotsList[j] - Object1.getComponent<Collider>().calculateMassCentre() <
                 Object1.getComponent<Collider>().cellRadius) {
             for (int i = 0; i < Object1.getComponent<Collider>().dotsList.size(); i++) {
                 if (i == Object1.getComponent<Collider>().dotsList.size() - 1) {
@@ -116,13 +116,13 @@ void CheckCollisions(){
     std::vector<GameObject> objects = Resources::getInstance().Objects;
     for (int i = 0; i < objects.size(); i++) {
         if (IsIn<Collider>(objects[i])) {
-            float xc1 = std::get<0>(objects[i].getComponent<Collider>().massCentre.crs);
-            float yc1 = std::get<1>(objects[i].getComponent<Collider>().massCentre.crs);
+            float xc1 = std::get<0>(objects[i].getComponent<Collider>().calculateMassCentre().crs);
+            float yc1 = std::get<1>(objects[i].getComponent<Collider>().calculateMassCentre().crs);
             float r1 = objects[i].getComponent<Collider>().cellRadius;
             for (int j = i + 1; j < objects.size(); j++) {
                 if (IsIn<Collider>(objects[j])) {
-                    float xc2 = std::get<0>(objects[j].getComponent<Collider>().massCentre.crs);
-                    float yc2 = std::get<1>(objects[j].getComponent<Collider>().massCentre.crs);
+                    float xc2 = std::get<0>(objects[j].getComponent<Collider>().calculateMassCentre().crs);
+                    float yc2 = std::get<1>(objects[j].getComponent<Collider>().calculateMassCentre().crs);
                     float r2 = objects[j].getComponent<Collider>().cellRadius;
                     if (std::sqrt(std::pow(xc2 - xc1, 2) + std::pow(yc2 - yc1, 2)) < r1 + r2) {
                         if (TheyCollided(objects[i], objects[j]))
@@ -136,13 +136,15 @@ void CheckCollisions(){
 //Find and solve collisions
 
 void MoveColliders(){
-    std::vector<GameObject> ObjectVector = Resources::getInstance().Objects;
-    float TimePassed = Resources::getInstance().CurrentFrameTime - Resources::getInstance().LastFrameTime;
-    CheckForces();
-    for (int i = 0; i < ObjectVector.size(); i++) {
-        MoveObject(ObjectVector[i], TimePassed);
+    while (Window::getWindow().isOpen()) {
+        std::vector<GameObject> ObjectVector = Resources::getInstance().Objects;
+        float TimePassed = Resources::getInstance().CurrentFrameTime - Resources::getInstance().LastFrameTime;
+        CheckForces();
+        for (int i = 0; i < ObjectVector.size(); i++) {
+            MoveObject(ObjectVector[i], TimePassed);
+        }
+        CheckCollisions();
     }
-    CheckCollisions();
 };
 //MoveDots and RotateObjects and checks everything in case of collisions. Also will contain Gravity and some effects.
 //Must work in cycle

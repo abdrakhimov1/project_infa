@@ -3,7 +3,7 @@
 //
 
 #include "GameObject.h"
-#include "allLibrares.h"
+#include "allLibraries.h"
 
 #ifndef PROJECT_INFA_ISIN_H
 #define PROJECT_INFA_ISIN_H

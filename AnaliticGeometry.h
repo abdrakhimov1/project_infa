@@ -2,7 +2,7 @@
 // Created by fantom on 06.04.18.
 //
 
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "WorkWithPairs.h"
 #include "Dot.h"
 #include "GameObject.h"

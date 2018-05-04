@@ -13,11 +13,11 @@
 #include "Sprite.h"
 #include "AnaliticGeometry.h"
 #include "Physics.h"
-#include "Game.h"
+//#include "Game.h"
 
 
 int main(){
-
+/*
     GameObject obj;
     GameObject obj2;
 
@@ -39,6 +39,6 @@ int main(){
 
 
 
-
+*/
     return 0;
 }

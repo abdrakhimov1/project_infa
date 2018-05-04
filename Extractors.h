@@ -4,7 +4,7 @@
 
 #include "GameObject.h"
 #include "WorkWithPairs.h"
-#include "allLibrares.h"
+#include "allLibraries.h"
 #include "Dot.h"
 #include "IsIn.h"
 
