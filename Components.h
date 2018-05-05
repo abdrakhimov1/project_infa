@@ -38,6 +38,7 @@ public:
     std::vector<Dot> setSpriteCoordinates();
     void make();
     void Draw();
+    std::string texture_name;
 
     ~DrawMe();
 };

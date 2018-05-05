@@ -37,7 +37,7 @@ DrawMe::~DrawMe() {
 }
 
 void DrawMe::Draw() {
-    Sprite sprite(*object);
+    Sprite sprite(*object, texture_name);
     sprite.draw();
 }
 

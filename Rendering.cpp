@@ -16,8 +16,9 @@ sf::Texture Sprite::setTexture() {
     return texture;
 }
 
-Sprite::Sprite(GameObject& object) {
+Sprite::Sprite(GameObject& object, std::string texture_name) {
     quantity_of_dots = object.getComponent<Collider>().dotsList.size();
+    obj_name = texture_name;
     convex.setPointCount(quantity_of_dots);
     std::vector<Dot> crs = object.getComponent<DrawMe>().setSpriteCoordinates();
     for (int i = 0; i < quantity_of_dots; i++) {

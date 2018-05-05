@@ -42,6 +42,7 @@ int main(){
 
 
 */
+    std::cout << "Better check";
     Dot dot1(10, 10);
     Dot dot2(80, 80);
     Dot dot3(45, 80);
@@ -51,8 +52,10 @@ int main(){
     std::pair<float, float> speed1 = std::make_pair(10, 10);
     std::pair<float, float> speed2 = std::make_pair(-10, -10);
     float mass = 200;
-    createTriangle(dot1, dot2, dot3, speed1, mass);
-    createTriangle(dot4, dot5, dot6, speed2, mass);
+    std::cout << "That's not so bad";
+
+    createTriangle(dot1, dot2, dot3, speed1, mass, "test_texture.jpg");
+    createTriangle(dot4, dot5, dot6, speed2, mass, "test_texture.jpg");
     std::cout << Resources::getInstance().Objects.size();
 
     std::thread drawing(drawAll);
@@ -60,5 +63,6 @@ int main(){
 
     drawing.join();
     physics.join();
+
     return 0;
 }

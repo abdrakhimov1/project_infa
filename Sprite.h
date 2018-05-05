@@ -18,9 +18,9 @@ private:
     sf::Texture texture;
     Dot centre;
 public:
-    Sprite(GameObject& object);
+    Sprite(GameObject& object, std::string texture_name);
 
-    const std::string obj_name;
+    std::string obj_name;
     sf::Texture setTexture();
   
     std::vector<Dot> dots;

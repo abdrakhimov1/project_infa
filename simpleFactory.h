@@ -10,6 +10,6 @@
 #define PROJECT_INFA_SIMPLEFACTORY_H
 
 //Creates triangle to draw and collide
-void createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed, float mass);
+void createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed, float mass, std::string texture_name);
 
 #endif //PROJECT_INFA_SIMPLEFACTORY_H
