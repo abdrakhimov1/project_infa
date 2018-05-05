@@ -40,4 +40,4 @@ add_executable(project_infa
         voiceRecognition.py
         Window.h
         WorkWithPairs.cpp
-        WorkWithPairs.h drawAll.cpp drawAll.h)
+        WorkWithPairs.h drawAll.cpp drawAll.h simpleFactory.cpp simpleFactory.h)

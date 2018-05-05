@@ -12,6 +12,13 @@ void drawAll(){
             Resources::getInstance().Objects[i].getComponent<DrawMe>().Draw();
         }
         Window::displayWindow();
+        while (Window::getWindow().pollEvent(Resources::getInstance().event)) {
+            switch (Resources::getInstance().event.type) {
+                case sf::Event::Closed:
+                    Window::getWindow().close();
+                    break;
+            }
+        }
         Resources::getInstance().accessToResourses.unlock();
     }
 }

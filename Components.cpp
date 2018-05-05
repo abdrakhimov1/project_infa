@@ -3,6 +3,8 @@
 //
 #include "Components.h"
 #include "resources.h"
+#include "AnaliticGeometry.h"
+
 AbstractComponent::~AbstractComponent() {}
 
 RigidBody::RigidBody(GameObject& object)
@@ -19,6 +21,8 @@ DrawMe::DrawMe(GameObject& object) {
     typeID = (char*) typeid(*this).name();
     AbstractComponent::object = &object;
 }
+
+void DrawMe::make() {}
 
 Dot DrawMe::setSpriteCentre() {
     return object -> getComponent<Collider>().calculateMassCentre();
@@ -60,6 +64,16 @@ Dot Collider::calculateMassCentre() {
 
 void Collider::Add_dot(Dot dot){
     this -> dotsList.push_back(dot);
+}
+
+void Collider::calculateCellRadius() {
+    float maximumDistance = 0;
+    float tmp = 0;
+    for (int i = 0; i < dotsList.size(); i++){
+        tmp = this -> calculateMassCentre() - dotsList[i];
+        if (tmp > maximumDistance) maximumDistance = tmp;
+    }
+    cellRadius = maximumDistance + 1;
 }
 /*
 class AbstractComponent{

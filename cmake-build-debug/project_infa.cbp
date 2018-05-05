@@ -194,6 +194,12 @@
 		<Unit filename="/home/fantom/Projects/project_infa/resources.h">
 			<Option target="project_infa"/>
 		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/simpleFactory.cpp">
+			<Option target="project_infa"/>
+		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/simpleFactory.h">
+			<Option target="project_infa"/>
+		</Unit>
 		<Unit filename="/home/fantom/Projects/project_infa/voiceRecognition.py">
 			<Option target="project_infa"/>
 		</Unit>

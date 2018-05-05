@@ -13,6 +13,7 @@ class Resources{
 private:
     Resources();
 public:
+    sf::Event event;
     std::vector<GameObject> Objects;
     sf::Clock Timer;
     float CurrentFrameTime;

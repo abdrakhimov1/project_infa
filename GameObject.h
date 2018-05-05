@@ -14,7 +14,7 @@ public:
 
     template <typename T>
     void addComponent(){
-        T *prop = new T;
+        T *prop = new T(*this);
         componentsList.push_back(prop);
     }
 

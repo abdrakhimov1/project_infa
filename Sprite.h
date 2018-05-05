@@ -24,7 +24,7 @@ public:
     sf::Texture setTexture();
   
     std::vector<Dot> dots;
-    int quantity_of_dots;
+    unsigned long quantity_of_dots;
 
     std::vector<Dot> crs;
     sf::Color mask_color = sf::Color::Black; // collision mask

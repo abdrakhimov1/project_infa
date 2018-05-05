@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fantom/Projects/project_infa/drawAll.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/drawAll.cpp.o"
   "/home/fantom/Projects/project_infa/main.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/main.cpp.o"
   "/home/fantom/Projects/project_infa/resources.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/resources.cpp.o"
+  "/home/fantom/Projects/project_infa/simpleFactory.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/simpleFactory.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

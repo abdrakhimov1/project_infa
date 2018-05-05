@@ -36,7 +36,7 @@ public:
     DrawMe(GameObject& object);
     Dot setSpriteCentre();
     std::vector<Dot> setSpriteCoordinates();
-
+    void make();
     void Draw();
 
     ~DrawMe();
@@ -51,6 +51,7 @@ public:
     Dot calculateMassCentre();
     void Add_dot(Dot dot);
     float cellRadius;
+    void calculateCellRadius();
 };
 
 #endif //PROJECT_INFA_COMPONENTS_H

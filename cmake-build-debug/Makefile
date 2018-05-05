@@ -555,6 +555,33 @@ resources.cpp.s:
 	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/resources.cpp.s
 .PHONY : resources.cpp.s
 
+simpleFactory.o: simpleFactory.cpp.o
+
+.PHONY : simpleFactory.o
+
+# target to build an object file
+simpleFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/simpleFactory.cpp.o
+.PHONY : simpleFactory.cpp.o
+
+simpleFactory.i: simpleFactory.cpp.i
+
+.PHONY : simpleFactory.i
+
+# target to preprocess a source file
+simpleFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/simpleFactory.cpp.i
+.PHONY : simpleFactory.cpp.i
+
+simpleFactory.s: simpleFactory.cpp.s
+
+.PHONY : simpleFactory.s
+
+# target to generate assembly for a file
+simpleFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/simpleFactory.cpp.s
+.PHONY : simpleFactory.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -612,6 +639,9 @@ help:
 	@echo "... resources.o"
 	@echo "... resources.i"
 	@echo "... resources.s"
+	@echo "... simpleFactory.o"
+	@echo "... simpleFactory.i"
+	@echo "... simpleFactory.s"
 .PHONY : help
 
 

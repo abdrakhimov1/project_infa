@@ -11,13 +11,13 @@ sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
     return vector;
 }
 
-
 sf::Texture Sprite::setTexture() {
     texture.loadFromFile(obj_name);
     return texture;
 }
 
 Sprite::Sprite(GameObject& object) {
+    quantity_of_dots = object.getComponent<Collider>().dotsList.size();
     convex.setPointCount(quantity_of_dots);
     std::vector<Dot> crs = object.getComponent<DrawMe>().setSpriteCoordinates();
     for (int i = 0; i < quantity_of_dots; i++) {
