@@ -14,13 +14,13 @@ public:
 
     template <typename T>
     void addComponent(){
-        T *prop = new T(*this);
+        T *prop = new T(this);
         componentsList.push_back(prop);
     }
 
     template <typename T>
     T& getComponent(){
-        for(int i =0; i < componentsList.size(); i++){
+        for(int i = 0; i < componentsList.size(); i++){
             if(strcmp(componentsList[i] -> typeID, typeid(T).name()) == 0) {
                 T *subClass = dynamic_cast<T*>(componentsList[i]);
                 return *subClass;

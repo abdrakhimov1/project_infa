@@ -7,19 +7,19 @@
 
 AbstractComponent::~AbstractComponent() {}
 
-RigidBody::RigidBody(GameObject& object)
+RigidBody::RigidBody(GameObject* object)
 {
     typeID = (char*) typeid(*this).name();
-    AbstractComponent::object = &object;
+    AbstractComponent::object = object;
 }
 
 RigidBody::~RigidBody() {}
 
 void RigidBody::make() {}
 
-DrawMe::DrawMe(GameObject& object) {
+DrawMe::DrawMe(GameObject* givenObject) {
     typeID = (char*) typeid(*this).name();
-    AbstractComponent::object = &object;
+    object = givenObject;
 }
 
 void DrawMe::make() {}
@@ -29,7 +29,16 @@ Dot DrawMe::setSpriteCentre() {
 }
 
 std::vector<Dot> DrawMe::setSpriteCoordinates() {
-    return object -> getComponent<Collider>().dotsList;
+    std::cout << "setSpriteCoordinates" << ' ' << '0' << std::endl;
+    std::vector<Dot>* temporal = new std::vector<Dot>;
+    std::cout << "setSpriteCoordinates" << ' ' << '1' << std::endl;
+    for (int i = 0; i < object -> getComponent<Collider>().dotsList.size(); i++){
+        std::cout << "setSpriteCoordinates" << ' ' << '0' << i << std::endl;
+        temporal -> push_back(object -> getComponent<Collider>().dotsList[i]);
+        std::cout << "setSpriteCoordinates" << ' ' << '1' << i << std::endl;
+    }
+    std::cout << "setSpriteCoordinates" << ' ' << '2' << std::endl;
+    return *temporal;
 }
 
 DrawMe::~DrawMe() {
@@ -41,9 +50,9 @@ void DrawMe::Draw() {
     sprite.draw();
 }
 
-Collider::Collider(GameObject& object) {
+Collider::Collider(GameObject* object) {
     typeID = (char*) typeid(*this).name();
-    AbstractComponent::object = &object;
+    AbstractComponent::object = object;
 }
 
 Collider::~Collider() {}

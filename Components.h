@@ -23,7 +23,7 @@ public:
 
 class RigidBody : public AbstractComponent{
 public:
-    RigidBody(GameObject& object);
+    RigidBody(GameObject* object);
     ~RigidBody();
     void make();
     std::pair<float, float> speed;
@@ -33,7 +33,7 @@ public:
 
 class DrawMe : public AbstractComponent{
 public:
-    DrawMe(GameObject& object);
+    DrawMe(GameObject* object);
     Dot setSpriteCentre();
     std::vector<Dot> setSpriteCoordinates();
     void make();
@@ -45,7 +45,7 @@ public:
 
 class Collider : public AbstractComponent{
 public:
-    Collider(GameObject& object);
+    Collider(GameObject* object);
     ~Collider();
     void make();
     std::vector<Dot> dotsList;
