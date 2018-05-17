@@ -8,4 +8,6 @@
 void MoveColliders();
 //Moves all objects, check collisions
 
+bool TheyCollided(GameObject Object1, GameObject Object2);
+
 #endif //PROJECT_INFA_PHYSICS_H

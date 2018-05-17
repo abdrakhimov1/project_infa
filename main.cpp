@@ -43,22 +43,23 @@ int main(){
 
 
 */
-    std::cout << "Better check" << std::endl;
     Dot dot1(500, 200);
-    Dot dot2(300, 160);
-    Dot dot3(80, 600);
+    Dot dot2(300, 560);
+    Dot dot3(480, 600);
     Dot dot4(200, 200);
     Dot dot5(120, 120);
     Dot dot6(120, 240);
-    float x = 2.0;
-    std::pair<float, float> speed1 = std::make_pair(x, x);
+    float x = 50.0;
+    std::pair<float, float> speed1 = std::make_pair(x, x+10);
     std::pair<float, float> speed2 = std::make_pair(-1*x, -1*x);
     float mass = 200;
-    std::cout << "That's not so bad" << std::endl;
 
     createTriangle(dot1, dot2, dot3, speed2, mass, "test_texture.jpg");
     createTriangle(dot4, dot5, dot6, speed1, mass, "test_texture.jpg");
-    std::cout << Resources::getInstance().Objects.size() << std::endl;
+    //createBorder();
+
+    std::cout << TheyCollided(Resources::getInstance().Objects[0], Resources::getInstance().Objects[1]);
+    std::cout << TheyCollided(Resources::getInstance().Objects[1], Resources::getInstance().Objects[0]);
 
     std::thread drawing(drawLines);
     std::thread physics(MoveColliders);

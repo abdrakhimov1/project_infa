@@ -29,6 +29,7 @@ public:
     std::pair<float, float> speed;
     float mass;
     float momentOfInertion;
+    bool unmovable;
 };
 
 class DrawMe : public AbstractComponent{

@@ -12,4 +12,6 @@
 //Creates triangle to draw and collide
 void createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed, float mass, std::string texture_name);
 
+void createBorder();
+
 #endif //PROJECT_INFA_SIMPLEFACTORY_H
