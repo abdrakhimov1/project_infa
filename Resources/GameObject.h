@@ -2,8 +2,8 @@
 // Created by fantom on 06.04.18.
 //
 
-#include "allLibraries.h"
-#include "Components.h"
+#include "../Staff/allLibraries.h"
+#include "../Resources/Components.h"
 
 #ifndef PROJECT_INFA_GAMEOBJECT_H
 #define PROJECT_INFA_GAMEOBJECT_H

@@ -1,5 +1,5 @@
-#include "ConverterPairToVector2.h"
-#include "Triangle.h"
+#include "../Logic/ConverterPairToVector2.h"
+#include "../Resources/Triangle.h"
 #include "StupidDrawMe.h"
 
 Dot Triangle::triangleMassCentre() {

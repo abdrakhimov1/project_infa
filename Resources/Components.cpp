@@ -1,9 +1,9 @@
 //
 // Created by ruby on 05.04.18.
 //
-#include "Components.h"
+#include "../Resources/Components.h"
 #include "resources.h"
-#include "AnaliticGeometry.h"
+#include "../Physics/AnaliticGeometry.h"
 
 AbstractComponent::~AbstractComponent() {}
 

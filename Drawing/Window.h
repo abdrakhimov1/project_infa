@@ -1,7 +1,7 @@
 //
 // Created by verwindle on 19.04.18.
 //
-#include "allLibraries.h"
+#include "../Staff/allLibraries.h"
 
 #ifndef PROJECT_INFA_WINDOW_H
 #define PROJECT_INFA_WINDOW_H

@@ -3,9 +3,9 @@
 // Modified by verwindle on 07.04.18.
 //
 
-#include "allLibraries.h"
+#include "../Staff/allLibraries.h"
 #include "GameObject.h"
-#include "Window.h"
+#include "../Drawing/Window.h"
 #ifndef PROJECT_INFA_RESOURCES_H
 #define PROJECT_INFA_RESOURCES_H
 

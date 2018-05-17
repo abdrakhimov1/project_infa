@@ -2,14 +2,14 @@
 // Created by fantom on 22.03.18.
 //
 
-#include "allLibraries.h"
-#include "WorkWithPairs.h"
-#include "Dot.h"
-#include "Components.h"
-#include "GameObject.h"
-#include "IsIn.h"
-#include "resources.h"
-#include "Extractors.h"
+#include "../Staff/allLibraries.h"
+#include "../Logic/WorkWithPairs.h"
+#include "../Resources/Dot.h"
+#include "../Resources/Components.h"
+#include "../Resources/GameObject.h"
+#include "../Logic/IsIn.h"
+#include "../Resources/resources.h"
+#include "../Logic/Extractors.h"
 #include "AnaliticGeometry.h"
 #include "Physics.h"
 

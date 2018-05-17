@@ -1,9 +1,9 @@
 //
 // Created by verwindle on 12.04.18.
 //
-#include "allLibraries.h"
-#include "Dot.h"
-#include "WorkWithPairs.h"
+#include "../Staff/allLibraries.h"
+#include "../Resources/Dot.h"
+#include "../Logic/WorkWithPairs.h"
 
 #ifndef PROJECT_INFA_SPRITE_H
 #define PROJECT_INFA_SPRITE_H

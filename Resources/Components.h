@@ -2,10 +2,10 @@
 // Created by fantom on 06.04.18.
 // Modified by verwindle on 07.04.18.; on 10.04.18.; on 17.04.18.
 //
-#include "allLibraries.h"
+#include "../Staff/allLibraries.h"
 #include "Dot.h"
-#include "Sprite.h"
-#include "Window.h"
+#include "../Drawing/Sprite.h"
+#include "../Drawing/Window.h"
 
 #ifndef PROJECT_INFA_COMPONENTS_H
 #define PROJECT_INFA_COMPONENTS_H

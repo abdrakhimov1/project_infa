@@ -3,10 +3,10 @@
 //
 
 #include "drawLines.h"
-#include "allLibraries.h"
-#include "GameObject.h"
-#include "resources.h"
-#include "ConverterPairToVector2.h"
+#include "../Staff/allLibraries.h"
+#include "../Resources/GameObject.h"
+#include "../Resources/resources.h"
+#include "../Logic/ConverterPairToVector2.h"
 
 void drawLines(){
     while (Window::getWindow().isOpen()){

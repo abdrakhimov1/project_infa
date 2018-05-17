@@ -1,7 +1,7 @@
-#include "ConverterPairToVector2.h"
+#include "../Logic/ConverterPairToVector2.h"
 #include "Sprite.h"
-#include "resources.h"
-#include "Components.h"
+#include "../Resources/resources.h"
+#include "../Resources/Components.h"
 
 sf::Vector2f getVectorFromPair(std::pair<float, float> coords) {
     float crx = std::get<0>(coords);
