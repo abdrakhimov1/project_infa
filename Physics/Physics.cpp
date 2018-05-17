@@ -194,7 +194,7 @@ void CheckCollisions(){
 
 void MoveColliders(){
     while (Window::getWindow().isOpen()) {
-        Resources::getInstance().accessToResourses.lock();
+        Resources::getInstance().accessToResources2.lock();
         Resources::getInstance().LastFrameTime = Resources::getInstance().CurrentFrameTime;
         Resources::getInstance().CurrentFrameTime = Resources::getInstance().Timer.getElapsedTime().asSeconds();
         std::vector<GameObject> ObjectVector = Resources::getInstance().Objects;
@@ -204,7 +204,7 @@ void MoveColliders(){
             MoveObject(ObjectVector[i], TimePassed);
         }
         CheckCollisions();
-        Resources::getInstance().accessToResourses.unlock();
+        Resources::getInstance().accessToResources2.unlock();
         while (Window::getWindow().pollEvent(Resources::getInstance().event)) {
             switch (Resources::getInstance().event.type) {
                 case sf::Event::Closed:

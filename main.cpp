@@ -49,8 +49,8 @@ int main(){
     Dot dot4(200, 200);
     Dot dot5(120, 120);
     Dot dot6(120, 240);
-    float x = 50.0;
-    std::pair<float, float> speed1 = std::make_pair(x, x+10);
+    float x = 10.0;
+    std::pair<float, float> speed1 = std::make_pair(x, x+2);
     std::pair<float, float> speed2 = std::make_pair(-1*x, -1*x);
     float mass = 200;
 

@@ -10,7 +10,7 @@
 
 void drawLines(){
     while (Window::getWindow().isOpen()){
-        Resources::getInstance().accessToResourses.lock();
+        Resources::getInstance().accessToResourses1.lock();
         Window::clearWindow();
         for (int i = 0; i < Resources::getInstance().Objects.size(); i++){
             sf::VertexArray tmpArray(sf::LinesStrip, 4);
@@ -32,6 +32,6 @@ void drawLines(){
                     break;
             }
         }
-        Resources::getInstance().accessToResourses.unlock();
+        Resources::getInstance().accessToResourses1.unlock();
     }
 }

@@ -6,7 +6,7 @@
 
 void drawAll(){
     while (Window::getWindow().isOpen()){
-        Resources::getInstance().accessToResourses.lock();
+        Resources::getInstance().accessToResources2.lock();
         Window::clearWindow();
         for (int i = 0; i < Resources::getInstance().Objects.size(); i++){
             Resources::getInstance().Objects[i].getComponent<DrawMe>().Draw();
@@ -19,6 +19,6 @@ void drawAll(){
                     break;
             }
         }
-        Resources::getInstance().accessToResourses.unlock();
+        Resources::getInstance().accessToResources2.unlock();
     }
 }

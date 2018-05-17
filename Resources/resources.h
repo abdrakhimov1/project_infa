@@ -18,7 +18,8 @@ public:
     sf::Clock Timer;
     float CurrentFrameTime;
     float LastFrameTime;
-    std::mutex accessToResourses;
+    std::mutex accessToResourses1;
+    std::mutex accessToResources2;
     void addObject(GameObject object);
     static Resources& getInstance();
 };
