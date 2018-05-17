@@ -14,4 +14,4 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -rf *.o main
+	rm -rf Logic/*.o Drawing/*.o Physics/*.o Python/*.o Resources/*.o Staff/*.o *.o main
