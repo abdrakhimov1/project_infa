@@ -1,9 +1,9 @@
 //
 // Created by verwindle on 11.04.18.
 //
-#include "allLibraries.h"
+#include "../Staff/allLibraries.h"
 #include "Dot.h"
-#include "WorkWithPairs.h"
+#include "../Logic/WorkWithPairs.h"
 
 #ifndef PROJECT_INFA_STUPIDRENDERING_H
 #define PROJECT_INFA_STUPIDRENDERING_H

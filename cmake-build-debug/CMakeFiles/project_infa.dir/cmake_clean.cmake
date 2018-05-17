@@ -8,7 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_infa.dir/GameObject.cpp.o"
   "CMakeFiles/project_infa.dir/IsIn.cpp.o"
   "CMakeFiles/project_infa.dir/main.cpp.o"
-  "CMakeFiles/project_infa.dir/Physics.cpp.o"
+  "CMakeFiles/project_infa.dir/Physics/Physics.cpp.o"
   "CMakeFiles/project_infa.dir/Rendering.cpp.o"
   "CMakeFiles/project_infa.dir/resources.cpp.o"
   "CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o"

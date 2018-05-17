@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fantom/Projects/project_infa
+CMAKE_SOURCE_DIR = /home/ruby/Documents/MIPT/INFA/project_infa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fantom/Projects/project_infa/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project_infa.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/project_infa.dir/flags.make
 
 CMakeFiles/project_infa.dir/Test/Test.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Test/Test.cpp.o: ../Test/Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_infa.dir/Test/Test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Test/Test.cpp.o -c /home/fantom/Projects/project_infa/Test/Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_infa.dir/Test/Test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Test/Test.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Test/Test.cpp
 
 CMakeFiles/project_infa.dir/Test/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Test/Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Test/Test.cpp > CMakeFiles/project_infa.dir/Test/Test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Test/Test.cpp > CMakeFiles/project_infa.dir/Test/Test.cpp.i
 
 CMakeFiles/project_infa.dir/Test/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Test/Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Test/Test.cpp -o CMakeFiles/project_infa.dir/Test/Test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Test/Test.cpp -o CMakeFiles/project_infa.dir/Test/Test.cpp.s
 
 CMakeFiles/project_infa.dir/Test/Test.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/project_infa.dir/Test/Test.cpp.o.provides.build: CMakeFiles/project_i
 
 CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o: ../AnaliticGeometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o -c /home/fantom/Projects/project_infa/AnaliticGeometry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/AnaliticGeometry.cpp
 
 CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/AnaliticGeometry.cpp > CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/AnaliticGeometry.cpp > CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.i
 
 CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/AnaliticGeometry.cpp -o CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/AnaliticGeometry.cpp -o CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.s
 
 CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/project_infa.dir/AnaliticGeometry.cpp.o.provides.build: CMakeFiles/pr
 
 CMakeFiles/project_infa.dir/Components.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Components.cpp.o: ../Components.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_infa.dir/Components.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Components.cpp.o -c /home/fantom/Projects/project_infa/Components.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_infa.dir/Components.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Components.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Components.cpp
 
 CMakeFiles/project_infa.dir/Components.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Components.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Components.cpp > CMakeFiles/project_infa.dir/Components.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Components.cpp > CMakeFiles/project_infa.dir/Components.cpp.i
 
 CMakeFiles/project_infa.dir/Components.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Components.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Components.cpp -o CMakeFiles/project_infa.dir/Components.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Components.cpp -o CMakeFiles/project_infa.dir/Components.cpp.s
 
 CMakeFiles/project_infa.dir/Components.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/project_infa.dir/Components.cpp.o.provides.build: CMakeFiles/project_
 
 CMakeFiles/project_infa.dir/Dot.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Dot.cpp.o: ../Dot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_infa.dir/Dot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Dot.cpp.o -c /home/fantom/Projects/project_infa/Dot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_infa.dir/Dot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Dot.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Dot.cpp
 
 CMakeFiles/project_infa.dir/Dot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Dot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Dot.cpp > CMakeFiles/project_infa.dir/Dot.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Dot.cpp > CMakeFiles/project_infa.dir/Dot.cpp.i
 
 CMakeFiles/project_infa.dir/Dot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Dot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Dot.cpp -o CMakeFiles/project_infa.dir/Dot.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Dot.cpp -o CMakeFiles/project_infa.dir/Dot.cpp.s
 
 CMakeFiles/project_infa.dir/Dot.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/project_infa.dir/Dot.cpp.o.provides.build: CMakeFiles/project_infa.di
 
 CMakeFiles/project_infa.dir/Extractors.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Extractors.cpp.o: ../Extractors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_infa.dir/Extractors.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Extractors.cpp.o -c /home/fantom/Projects/project_infa/Extractors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_infa.dir/Extractors.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Extractors.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Extractors.cpp
 
 CMakeFiles/project_infa.dir/Extractors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Extractors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Extractors.cpp > CMakeFiles/project_infa.dir/Extractors.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Extractors.cpp > CMakeFiles/project_infa.dir/Extractors.cpp.i
 
 CMakeFiles/project_infa.dir/Extractors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Extractors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Extractors.cpp -o CMakeFiles/project_infa.dir/Extractors.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Extractors.cpp -o CMakeFiles/project_infa.dir/Extractors.cpp.s
 
 CMakeFiles/project_infa.dir/Extractors.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/project_infa.dir/Extractors.cpp.o.provides.build: CMakeFiles/project_
 
 CMakeFiles/project_infa.dir/Game.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_infa.dir/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Game.cpp.o -c /home/fantom/Projects/project_infa/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_infa.dir/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Game.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Game.cpp
 
 CMakeFiles/project_infa.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Game.cpp > CMakeFiles/project_infa.dir/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Game.cpp > CMakeFiles/project_infa.dir/Game.cpp.i
 
 CMakeFiles/project_infa.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Game.cpp -o CMakeFiles/project_infa.dir/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Game.cpp -o CMakeFiles/project_infa.dir/Game.cpp.s
 
 CMakeFiles/project_infa.dir/Game.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/project_infa.dir/Game.cpp.o.provides.build: CMakeFiles/project_infa.d
 
 CMakeFiles/project_infa.dir/GameObject.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/GameObject.cpp.o: ../GameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_infa.dir/GameObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/GameObject.cpp.o -c /home/fantom/Projects/project_infa/GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_infa.dir/GameObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/GameObject.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/GameObject.cpp
 
 CMakeFiles/project_infa.dir/GameObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/GameObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/GameObject.cpp > CMakeFiles/project_infa.dir/GameObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/GameObject.cpp > CMakeFiles/project_infa.dir/GameObject.cpp.i
 
 CMakeFiles/project_infa.dir/GameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/GameObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/GameObject.cpp -o CMakeFiles/project_infa.dir/GameObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/GameObject.cpp -o CMakeFiles/project_infa.dir/GameObject.cpp.s
 
 CMakeFiles/project_infa.dir/GameObject.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/project_infa.dir/GameObject.cpp.o.provides.build: CMakeFiles/project_
 
 CMakeFiles/project_infa.dir/IsIn.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/IsIn.cpp.o: ../IsIn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_infa.dir/IsIn.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/IsIn.cpp.o -c /home/fantom/Projects/project_infa/IsIn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_infa.dir/IsIn.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/IsIn.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/IsIn.cpp
 
 CMakeFiles/project_infa.dir/IsIn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/IsIn.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/IsIn.cpp > CMakeFiles/project_infa.dir/IsIn.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/IsIn.cpp > CMakeFiles/project_infa.dir/IsIn.cpp.i
 
 CMakeFiles/project_infa.dir/IsIn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/IsIn.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/IsIn.cpp -o CMakeFiles/project_infa.dir/IsIn.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/IsIn.cpp -o CMakeFiles/project_infa.dir/IsIn.cpp.s
 
 CMakeFiles/project_infa.dir/IsIn.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/project_infa.dir/IsIn.cpp.o.provides.build: CMakeFiles/project_infa.d
 
 CMakeFiles/project_infa.dir/main.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_infa.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/main.cpp.o -c /home/fantom/Projects/project_infa/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_infa.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/main.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/main.cpp
 
 CMakeFiles/project_infa.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/main.cpp > CMakeFiles/project_infa.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/main.cpp > CMakeFiles/project_infa.dir/main.cpp.i
 
 CMakeFiles/project_infa.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/main.cpp -o CMakeFiles/project_infa.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/main.cpp -o CMakeFiles/project_infa.dir/main.cpp.s
 
 CMakeFiles/project_infa.dir/main.cpp.o.requires:
 
@@ -273,42 +273,42 @@ CMakeFiles/project_infa.dir/main.cpp.o.provides: CMakeFiles/project_infa.dir/mai
 CMakeFiles/project_infa.dir/main.cpp.o.provides.build: CMakeFiles/project_infa.dir/main.cpp.o
 
 
-CMakeFiles/project_infa.dir/Physics.cpp.o: CMakeFiles/project_infa.dir/flags.make
-CMakeFiles/project_infa.dir/Physics.cpp.o: ../Physics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_infa.dir/Physics.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Physics.cpp.o -c /home/fantom/Projects/project_infa/Physics.cpp
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.o: CMakeFiles/project_infa.dir/flags.make
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.o: ../Physics/Physics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_infa.dir/Physics/Physics.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Physics/Physics.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Physics/Physics.cpp
 
-CMakeFiles/project_infa.dir/Physics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Physics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Physics.cpp > CMakeFiles/project_infa.dir/Physics.cpp.i
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Physics/Physics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Physics/Physics.cpp > CMakeFiles/project_infa.dir/Physics/Physics.cpp.i
 
-CMakeFiles/project_infa.dir/Physics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Physics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Physics.cpp -o CMakeFiles/project_infa.dir/Physics.cpp.s
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Physics/Physics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Physics/Physics.cpp -o CMakeFiles/project_infa.dir/Physics/Physics.cpp.s
 
-CMakeFiles/project_infa.dir/Physics.cpp.o.requires:
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.requires:
 
-.PHONY : CMakeFiles/project_infa.dir/Physics.cpp.o.requires
+.PHONY : CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.requires
 
-CMakeFiles/project_infa.dir/Physics.cpp.o.provides: CMakeFiles/project_infa.dir/Physics.cpp.o.requires
-	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics.cpp.o.provides.build
-.PHONY : CMakeFiles/project_infa.dir/Physics.cpp.o.provides
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.provides: CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.provides.build
+.PHONY : CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.provides
 
-CMakeFiles/project_infa.dir/Physics.cpp.o.provides.build: CMakeFiles/project_infa.dir/Physics.cpp.o
+CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.provides.build: CMakeFiles/project_infa.dir/Physics/Physics.cpp.o
 
 
 CMakeFiles/project_infa.dir/Rendering.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/Rendering.cpp.o: ../Rendering.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_infa.dir/Rendering.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Rendering.cpp.o -c /home/fantom/Projects/project_infa/Rendering.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_infa.dir/Rendering.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/Rendering.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/Rendering.cpp
 
 CMakeFiles/project_infa.dir/Rendering.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/Rendering.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/Rendering.cpp > CMakeFiles/project_infa.dir/Rendering.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/Rendering.cpp > CMakeFiles/project_infa.dir/Rendering.cpp.i
 
 CMakeFiles/project_infa.dir/Rendering.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/Rendering.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/Rendering.cpp -o CMakeFiles/project_infa.dir/Rendering.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/Rendering.cpp -o CMakeFiles/project_infa.dir/Rendering.cpp.s
 
 CMakeFiles/project_infa.dir/Rendering.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/project_infa.dir/Rendering.cpp.o.provides.build: CMakeFiles/project_i
 
 CMakeFiles/project_infa.dir/resources.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/resources.cpp.o: ../resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_infa.dir/resources.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/resources.cpp.o -c /home/fantom/Projects/project_infa/resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_infa.dir/resources.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/resources.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/resources.cpp
 
 CMakeFiles/project_infa.dir/resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/resources.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/resources.cpp > CMakeFiles/project_infa.dir/resources.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/resources.cpp > CMakeFiles/project_infa.dir/resources.cpp.i
 
 CMakeFiles/project_infa.dir/resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/resources.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/resources.cpp -o CMakeFiles/project_infa.dir/resources.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/resources.cpp -o CMakeFiles/project_infa.dir/resources.cpp.s
 
 CMakeFiles/project_infa.dir/resources.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/project_infa.dir/resources.cpp.o.provides.build: CMakeFiles/project_i
 
 CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o: ../StupidDrawMe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o -c /home/fantom/Projects/project_infa/StupidDrawMe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/StupidDrawMe.cpp
 
 CMakeFiles/project_infa.dir/StupidDrawMe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/StupidDrawMe.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/StupidDrawMe.cpp > CMakeFiles/project_infa.dir/StupidDrawMe.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/StupidDrawMe.cpp > CMakeFiles/project_infa.dir/StupidDrawMe.cpp.i
 
 CMakeFiles/project_infa.dir/StupidDrawMe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/StupidDrawMe.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/StupidDrawMe.cpp -o CMakeFiles/project_infa.dir/StupidDrawMe.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/StupidDrawMe.cpp -o CMakeFiles/project_infa.dir/StupidDrawMe.cpp.s
 
 CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o.provides.build: CMakeFiles/projec
 
 CMakeFiles/project_infa.dir/StupidRendering.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/StupidRendering.cpp.o: ../StupidRendering.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_infa.dir/StupidRendering.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/StupidRendering.cpp.o -c /home/fantom/Projects/project_infa/StupidRendering.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_infa.dir/StupidRendering.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/StupidRendering.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/StupidRendering.cpp
 
 CMakeFiles/project_infa.dir/StupidRendering.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/StupidRendering.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/StupidRendering.cpp > CMakeFiles/project_infa.dir/StupidRendering.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/StupidRendering.cpp > CMakeFiles/project_infa.dir/StupidRendering.cpp.i
 
 CMakeFiles/project_infa.dir/StupidRendering.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/StupidRendering.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/StupidRendering.cpp -o CMakeFiles/project_infa.dir/StupidRendering.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/StupidRendering.cpp -o CMakeFiles/project_infa.dir/StupidRendering.cpp.s
 
 CMakeFiles/project_infa.dir/StupidRendering.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/project_infa.dir/StupidRendering.cpp.o.provides.build: CMakeFiles/pro
 
 CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o: ../WorkWithPairs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o -c /home/fantom/Projects/project_infa/WorkWithPairs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/WorkWithPairs.cpp
 
 CMakeFiles/project_infa.dir/WorkWithPairs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/WorkWithPairs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/WorkWithPairs.cpp > CMakeFiles/project_infa.dir/WorkWithPairs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/WorkWithPairs.cpp > CMakeFiles/project_infa.dir/WorkWithPairs.cpp.i
 
 CMakeFiles/project_infa.dir/WorkWithPairs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/WorkWithPairs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/WorkWithPairs.cpp -o CMakeFiles/project_infa.dir/WorkWithPairs.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/WorkWithPairs.cpp -o CMakeFiles/project_infa.dir/WorkWithPairs.cpp.s
 
 CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o.provides.build: CMakeFiles/proje
 
 CMakeFiles/project_infa.dir/drawAll.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/drawAll.cpp.o: ../drawAll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project_infa.dir/drawAll.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/drawAll.cpp.o -c /home/fantom/Projects/project_infa/drawAll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project_infa.dir/drawAll.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/drawAll.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/drawAll.cpp
 
 CMakeFiles/project_infa.dir/drawAll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/drawAll.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/drawAll.cpp > CMakeFiles/project_infa.dir/drawAll.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/drawAll.cpp > CMakeFiles/project_infa.dir/drawAll.cpp.i
 
 CMakeFiles/project_infa.dir/drawAll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/drawAll.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/drawAll.cpp -o CMakeFiles/project_infa.dir/drawAll.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/drawAll.cpp -o CMakeFiles/project_infa.dir/drawAll.cpp.s
 
 CMakeFiles/project_infa.dir/drawAll.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/project_infa.dir/drawAll.cpp.o.provides.build: CMakeFiles/project_inf
 
 CMakeFiles/project_infa.dir/simpleFactory.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/simpleFactory.cpp.o: ../simpleFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project_infa.dir/simpleFactory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/simpleFactory.cpp.o -c /home/fantom/Projects/project_infa/simpleFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project_infa.dir/simpleFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/simpleFactory.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/simpleFactory.cpp
 
 CMakeFiles/project_infa.dir/simpleFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/simpleFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/simpleFactory.cpp > CMakeFiles/project_infa.dir/simpleFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/simpleFactory.cpp > CMakeFiles/project_infa.dir/simpleFactory.cpp.i
 
 CMakeFiles/project_infa.dir/simpleFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/simpleFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/simpleFactory.cpp -o CMakeFiles/project_infa.dir/simpleFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/simpleFactory.cpp -o CMakeFiles/project_infa.dir/simpleFactory.cpp.s
 
 CMakeFiles/project_infa.dir/simpleFactory.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/project_infa.dir/simpleFactory.cpp.o.provides.build: CMakeFiles/proje
 
 CMakeFiles/project_infa.dir/drawLines.cpp.o: CMakeFiles/project_infa.dir/flags.make
 CMakeFiles/project_infa.dir/drawLines.cpp.o: ../drawLines.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project_infa.dir/drawLines.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/drawLines.cpp.o -c /home/fantom/Projects/project_infa/drawLines.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project_infa.dir/drawLines.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_infa.dir/drawLines.cpp.o -c /home/ruby/Documents/MIPT/INFA/project_infa/drawLines.cpp
 
 CMakeFiles/project_infa.dir/drawLines.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_infa.dir/drawLines.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fantom/Projects/project_infa/drawLines.cpp > CMakeFiles/project_infa.dir/drawLines.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruby/Documents/MIPT/INFA/project_infa/drawLines.cpp > CMakeFiles/project_infa.dir/drawLines.cpp.i
 
 CMakeFiles/project_infa.dir/drawLines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_infa.dir/drawLines.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fantom/Projects/project_infa/drawLines.cpp -o CMakeFiles/project_infa.dir/drawLines.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruby/Documents/MIPT/INFA/project_infa/drawLines.cpp -o CMakeFiles/project_infa.dir/drawLines.cpp.s
 
 CMakeFiles/project_infa.dir/drawLines.cpp.o.requires:
 
@@ -500,7 +500,7 @@ project_infa_OBJECTS = \
 "CMakeFiles/project_infa.dir/GameObject.cpp.o" \
 "CMakeFiles/project_infa.dir/IsIn.cpp.o" \
 "CMakeFiles/project_infa.dir/main.cpp.o" \
-"CMakeFiles/project_infa.dir/Physics.cpp.o" \
+"CMakeFiles/project_infa.dir/Physics/Physics.cpp.o" \
 "CMakeFiles/project_infa.dir/Rendering.cpp.o" \
 "CMakeFiles/project_infa.dir/resources.cpp.o" \
 "CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o" \
@@ -522,7 +522,7 @@ project_infa: CMakeFiles/project_infa.dir/Game.cpp.o
 project_infa: CMakeFiles/project_infa.dir/GameObject.cpp.o
 project_infa: CMakeFiles/project_infa.dir/IsIn.cpp.o
 project_infa: CMakeFiles/project_infa.dir/main.cpp.o
-project_infa: CMakeFiles/project_infa.dir/Physics.cpp.o
+project_infa: CMakeFiles/project_infa.dir/Physics/Physics.cpp.o
 project_infa: CMakeFiles/project_infa.dir/Rendering.cpp.o
 project_infa: CMakeFiles/project_infa.dir/resources.cpp.o
 project_infa: CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o
@@ -533,7 +533,7 @@ project_infa: CMakeFiles/project_infa.dir/simpleFactory.cpp.o
 project_infa: CMakeFiles/project_infa.dir/drawLines.cpp.o
 project_infa: CMakeFiles/project_infa.dir/build.make
 project_infa: CMakeFiles/project_infa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable project_infa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable project_infa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_infa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -550,7 +550,7 @@ CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/Game.cpp.o.req
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/GameObject.cpp.o.requires
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/IsIn.cpp.o.requires
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/main.cpp.o.requires
-CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/Physics.cpp.o.requires
+CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/Physics/Physics.cpp.o.requires
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/Rendering.cpp.o.requires
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/resources.cpp.o.requires
 CMakeFiles/project_infa.dir/requires: CMakeFiles/project_infa.dir/StupidDrawMe.cpp.o.requires
@@ -567,6 +567,6 @@ CMakeFiles/project_infa.dir/clean:
 .PHONY : CMakeFiles/project_infa.dir/clean
 
 CMakeFiles/project_infa.dir/depend:
-	cd /home/fantom/Projects/project_infa/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fantom/Projects/project_infa /home/fantom/Projects/project_infa /home/fantom/Projects/project_infa/cmake-build-debug /home/fantom/Projects/project_infa/cmake-build-debug /home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ruby/Documents/MIPT/INFA/project_infa /home/ruby/Documents/MIPT/INFA/project_infa /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project_infa.dir/depend
 

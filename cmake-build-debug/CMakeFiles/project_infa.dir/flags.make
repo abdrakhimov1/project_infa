@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fantom/Projects/project_infa/. 
+CXX_INCLUDES = -I/home/ruby/Documents/MIPT/INFA/project_infa/. 
 

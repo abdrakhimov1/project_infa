@@ -1,8 +1,8 @@
 //
 // Created by verwindle on 11.04.18.
 //
-#include "Components.h"
-#include "Triangle.h"
+#include "../Resources/Components.h"
+#include "../Resources/Triangle.h"
 
 #ifndef PROJECT_INFA_STUPIDDRAWME_H
 #define PROJECT_INFA_STUPIDDRAWME_H

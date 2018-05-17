@@ -2,10 +2,10 @@
 // Created by fantom on 06.04.18.
 //
 
-#include "allLibraries.h"
-#include "WorkWithPairs.h"
-#include "Dot.h"
-#include "GameObject.h"
+#include "../Staff/allLibraries.h"
+#include "../Logic/WorkWithPairs.h"
+#include "../Resources/Dot.h"
+#include "../Resources/GameObject.h"
 
 #ifndef PROJECT_INFA_ANALITICGEOMETRY_H
 #define PROJECT_INFA_ANALITICGEOMETRY_H

@@ -1,8 +1,8 @@
 //
 // Created by fantom on 06.04.18.
 //
-#include "allLibraries.h"
-#include "WorkWithPairs.h"
+#include "../Staff/allLibraries.h"
+#include "../Logic/WorkWithPairs.h"
 
 #ifndef PROJECT_INFA_DOT_H
 #define PROJECT_INFA_DOT_H

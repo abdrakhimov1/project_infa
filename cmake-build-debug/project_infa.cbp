@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/fantom/Projects/project_infa/cmake-build-debug"/>
+				<Option working_dir="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/fantom/Projects/project_infa/cmake-build-debug"/>
+				<Option working_dir="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/fantom/Projects/project_infa/cmake-build-debug"/>
+				<Option working_dir="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project_infa">
-				<Option output="/home/fantom/Projects/project_infa/cmake-build-debug/project_infa" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/fantom/Projects/project_infa/cmake-build-debug"/>
+				<Option output="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/project_infa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/fantom/Projects/project_infa/."/>
+					<Add directory="/home/ruby/Documents/MIPT/INFA/project_infa/."/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -55,20 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_infa"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_infa"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project_infa/fast">
-				<Option output="/home/fantom/Projects/project_infa/cmake-build-debug/project_infa" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/fantom/Projects/project_infa/cmake-build-debug"/>
+				<Option output="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/project_infa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/fantom/Projects/project_infa/."/>
+					<Add directory="/home/ruby/Documents/MIPT/INFA/project_infa/."/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -79,137 +79,137 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_infa/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fantom/Projects/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_infa/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/fantom/Projects/project_infa/AnaliticGeometry.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/AnaliticGeometry.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/AnaliticGeometry.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/AnaliticGeometry.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Components.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Components.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Components.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Components.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/ConverterPairToVector2.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/ConverterPairToVector2.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Dot.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Dot.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Dot.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Dot.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Extractors.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Extractors.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Extractors.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Extractors.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Game.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Game.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Game.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Game.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/GameObject.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/GameObject.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/GameObject.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/GameObject.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/IsIn.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/IsIn.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/IsIn.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/IsIn.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Makefile">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Makefile">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Physics.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Physics.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Physics.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Physics/Physics.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/README.md">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/README.md">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Rendering.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Rendering.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Sprite.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Sprite.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/StupidDrawMe.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/StupidDrawMe.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/StupidDrawMe.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/StupidDrawMe.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/StupidRendering.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/StupidRendering.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Test/Test.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Test/Test.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Triangle.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Triangle.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/Window.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/Window.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/WorkWithPairs.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/WorkWithPairs.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/WorkWithPairs.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/WorkWithPairs.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/allLibraries.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/allLibraries.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/drawAll.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/drawAll.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/drawAll.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/drawAll.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/drawLines.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/drawLines.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/drawLines.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/drawLines.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/main.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/main.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/project_infa.xml">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/project_infa.xml">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/resources.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/resources.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/resources.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/resources.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/simpleFactory.cpp">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/simpleFactory.cpp">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/simpleFactory.h">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/simpleFactory.h">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/voiceRecognition.py">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/voiceRecognition.py">
 			<Option target="project_infa"/>
 		</Unit>
-		<Unit filename="/home/fantom/Projects/project_infa/CMakeLists.txt">
+		<Unit filename="/home/ruby/Documents/MIPT/INFA/project_infa/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

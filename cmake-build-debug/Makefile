@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fantom/Projects/project_infa
+CMAKE_SOURCE_DIR = /home/ruby/Documents/MIPT/INFA/project_infa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fantom/Projects/project_infa/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/fantom/Projects/project_infa/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/fantom/CLion/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/ruby/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles /home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruby/Documents/MIPT/INFA/project_infa/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -312,32 +312,32 @@ IsIn.cpp.s:
 	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/IsIn.cpp.s
 .PHONY : IsIn.cpp.s
 
-Physics.o: Physics.cpp.o
+Physics/Physics.o: Physics/Physics.cpp.o
 
-.PHONY : Physics.o
+.PHONY : Physics/Physics.o
 
 # target to build an object file
-Physics.cpp.o:
-	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics.cpp.o
-.PHONY : Physics.cpp.o
+Physics/Physics.cpp.o:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics/Physics.cpp.o
+.PHONY : Physics/Physics.cpp.o
 
-Physics.i: Physics.cpp.i
+Physics/Physics.i: Physics/Physics.cpp.i
 
-.PHONY : Physics.i
+.PHONY : Physics/Physics.i
 
 # target to preprocess a source file
-Physics.cpp.i:
-	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics.cpp.i
-.PHONY : Physics.cpp.i
+Physics/Physics.cpp.i:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics/Physics.cpp.i
+.PHONY : Physics/Physics.cpp.i
 
-Physics.s: Physics.cpp.s
+Physics/Physics.s: Physics/Physics.cpp.s
 
-.PHONY : Physics.s
+.PHONY : Physics/Physics.s
 
 # target to generate assembly for a file
-Physics.cpp.s:
-	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics.cpp.s
-.PHONY : Physics.cpp.s
+Physics/Physics.cpp.s:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/Physics/Physics.cpp.s
+.PHONY : Physics/Physics.cpp.s
 
 Rendering.o: Rendering.cpp.o
 
@@ -639,9 +639,9 @@ help:
 	@echo "... IsIn.o"
 	@echo "... IsIn.i"
 	@echo "... IsIn.s"
-	@echo "... Physics.o"
-	@echo "... Physics.i"
-	@echo "... Physics.s"
+	@echo "... Physics/Physics.o"
+	@echo "... Physics/Physics.i"
+	@echo "... Physics/Physics.s"
 	@echo "... Rendering.o"
 	@echo "... Rendering.i"
 	@echo "... Rendering.s"

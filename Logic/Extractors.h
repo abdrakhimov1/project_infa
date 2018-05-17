@@ -2,10 +2,10 @@
 // Created by fantom on 06.04.18.
 //
 
-#include "GameObject.h"
+#include "../Resources/GameObject.h"
 #include "WorkWithPairs.h"
-#include "allLibraries.h"
-#include "Dot.h"
+#include "../Staff/allLibraries.h"
+#include "../Resources/Dot.h"
 #include "IsIn.h"
 
 #ifndef PROJECT_INFA_EXTRACTORS_H
