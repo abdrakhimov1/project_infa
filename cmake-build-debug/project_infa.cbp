@@ -182,6 +182,12 @@
 		<Unit filename="/home/fantom/Projects/project_infa/drawAll.h">
 			<Option target="project_infa"/>
 		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/drawLines.cpp">
+			<Option target="project_infa"/>
+		</Unit>
+		<Unit filename="/home/fantom/Projects/project_infa/drawLines.h">
+			<Option target="project_infa"/>
+		</Unit>
 		<Unit filename="/home/fantom/Projects/project_infa/main.cpp">
 			<Option target="project_infa"/>
 		</Unit>

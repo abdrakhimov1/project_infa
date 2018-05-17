@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fantom/Projects/project_infa/Test/Test.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/Test/Test.cpp.o"
   "/home/fantom/Projects/project_infa/WorkWithPairs.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/WorkWithPairs.cpp.o"
   "/home/fantom/Projects/project_infa/drawAll.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/drawAll.cpp.o"
+  "/home/fantom/Projects/project_infa/drawLines.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/drawLines.cpp.o"
   "/home/fantom/Projects/project_infa/main.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/main.cpp.o"
   "/home/fantom/Projects/project_infa/resources.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/resources.cpp.o"
   "/home/fantom/Projects/project_infa/simpleFactory.cpp" "/home/fantom/Projects/project_infa/cmake-build-debug/CMakeFiles/project_infa.dir/simpleFactory.cpp.o"

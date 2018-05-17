@@ -3,7 +3,9 @@
 //
 
 #include "resources.h"
-Resources::Resources(){}
+Resources::Resources(){
+    Timer.restart();
+}
 
 Window::Window() {
     sf::ContextSettings settings;

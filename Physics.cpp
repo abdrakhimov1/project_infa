@@ -23,6 +23,7 @@ void MoveObject(GameObject CurrentObject, float TimePassed){
         std::pair<float, float> NewCoordinates = CurrentCoordinates + Movement;
         DotVector[j].crs = NewCoordinates;
     }
+    CurrentObject.getComponent<Collider>().dotsList = DotVector;
 };
 //This one moves all dots of one object + MassCenter.
 
@@ -38,32 +39,53 @@ void CheckForces(){
 
 bool TheyCollided(GameObject Object1, GameObject Object2){
     int counter = 0;
-    float x, y, x0, y0, x1, y1, a = 0, b = 0;       //y = a*x + b
-    for (int j = 0; j < Object2.getComponent<Collider>().dotsList.size(); j++){
-        x = std::get<0>(Object2.getComponent<Collider>().dotsList[j].crs);
-        y = std::get<1>(Object2.getComponent<Collider>().dotsList[j].crs);
-        if (Object2.getComponent<Collider>().dotsList[j] - Object1.getComponent<Collider>().calculateMassCentre() <
-                Object1.getComponent<Collider>().cellRadius) {
-            for (int i = 0; i < Object1.getComponent<Collider>().dotsList.size(); i++) {
-                if (i == Object1.getComponent<Collider>().dotsList.size() - 1) {
-                    x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[0].crs);
-                    y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[0].crs);
-                } else {
-                    x1 = std::get<0>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
-                    y1 = std::get<1>(Object1.getComponent<Collider>().dotsList[i + 1].crs);
-                }
-                x0 = std::get<0>(Object1.getComponent<Collider>().dotsList[i].crs);
-                y0 = std::get<1>(Object1.getComponent<Collider>().dotsList[i].crs);
-                if (x1 != x0) {
-                    a = (y1 - y0) / (x1 - x0);
-                    b = (y0 * x1 - y1 * x0);
-                }
-                if (x1 != x0 and (y - (a * x + b)) * (x1 - x0) < 0) counter++;
-                if (x1 == x0 and (x - x0) * (y1 - y0) < 0) counter++;
-            }
-            if (counter == Object1.getComponent<Collider>().dotsList.size()) return true;
-        }
+    float x, y, x0, y0, x1, y1;
+    double tmp, maxSelf = 0, minOver;
+    GameObject* smallObject;
+    GameObject* bigObject;
+    if (Object1.getComponent<Collider>().dotsList.size() < Object2.getComponent<Collider>().dotsList.size()) {
+        smallObject = &Object1;
+        bigObject = &Object2;
     }
+    else{
+        smallObject = &Object2;
+        bigObject = &Object1;
+    }
+
+    minOver = 10*(smallObject -> getComponent<Collider>().cellRadius);
+
+    for (int i = 0; i < smallObject -> getComponent<Collider>().dotsList.size(); i++) {
+        if (i == smallObject -> getComponent<Collider>().dotsList.size() - 1) {
+            x1 = std::get<0>(smallObject -> getComponent<Collider>().dotsList[0].crs);
+            y1 = std::get<1>(smallObject -> getComponent<Collider>().dotsList[0].crs);
+        } else {
+            x1 = std::get<0>(smallObject -> getComponent<Collider>().dotsList[i + 1].crs);
+            y1 = std::get<1>(smallObject -> getComponent<Collider>().dotsList[i + 1].crs);
+        }
+        x0 = std::get<0>(smallObject -> getComponent<Collider>().dotsList[i].crs);
+        y0 = std::get<1>(smallObject -> getComponent<Collider>().dotsList[i].crs);
+
+        for (int k = 0; i < smallObject -> getComponent<Collider>().dotsList.size(); i++){
+            x = std::get<0>(smallObject -> getComponent<Collider>().dotsList[k].crs);
+            y = std::get<1>(smallObject -> getComponent<Collider>().dotsList[k].crs);
+            tmp = std::abs((y1 - y0)*x - (x1 - x0)*y + x1*y0 - x0*y1)/std::sqrt(std::pow((y1 - y0), 2) + std::pow((x1 - x0), 2));
+            std::cout << x1 << ' ' << y1 << ' ' << x0 << ' ' << y0 << ' ' << x << ' ' << y << ' ' << tmp << std::endl;
+            if (tmp > maxSelf) maxSelf = tmp;
+        }
+
+        for (int n = 0; n < bigObject -> getComponent<Collider>().dotsList.size(); n++){
+            x = std::get<0>(bigObject -> getComponent<Collider>().dotsList[n].crs);
+            y = std::get<1>(bigObject -> getComponent<Collider>().dotsList[n].crs);
+            tmp = std::abs((y1 - y0)*x - (x1 - x0)*y + x1*y0 - x0*y1)/std::sqrt(std::pow((y1 - y0), 2) + std::pow((x1 - x0), 2));
+            if (tmp < minOver) minOver = tmp;
+        }
+
+        if (minOver < maxSelf) counter++;
+        //std::cout << minOver << ' ' << maxSelf << std::endl;
+    }
+
+    if (counter == smallObject -> getComponent<Collider>().dotsList.size()) return true;
+
     return false;
 };
 //Inspect if two given objects have collided. Can work with convex collider.
@@ -99,12 +121,17 @@ void NonElasticCollision(GameObject Object1, GameObject Object2){
 void SolveCollision(GameObject Object1, GameObject Object2){
     float AdditionalTime = 0;
     float step = 0.005*(Resources::getInstance().CurrentFrameTime - Resources::getInstance().LastFrameTime);
+    std::cout << "I'm in SolveCollision" << std::endl;
+    /*
     while (TheyCollided(Object1, Object2)){
         MoveObject(Object1, -1*step);
         MoveObject(Object2, -1*step);
         AdditionalTime += step;
     }
+    std::cout << "I'm in SolveCollision, cycle ended" << std::endl;
+    */
     ElasticCollision(Object1, Object2);
+    std::cout << Object1.getComponent<RigidBody>().speed.first;
     MoveObject(Object1, AdditionalTime);
     MoveObject(Object2, AdditionalTime);
 };
@@ -136,8 +163,9 @@ void CheckCollisions(){
 //Find and solve collisions
 
 void MoveColliders(){
+    std::cout << "MoveColliders" << std::endl;
     while (Window::getWindow().isOpen()) {
-        Resources::getInstance().accessToResourses.lock();
+        //Resources::getInstance().accessToResourses.lock();
         Resources::getInstance().LastFrameTime = Resources::getInstance().CurrentFrameTime;
         Resources::getInstance().CurrentFrameTime = Resources::getInstance().Timer.getElapsedTime().asSeconds();
         std::vector<GameObject> ObjectVector = Resources::getInstance().Objects;
@@ -147,7 +175,14 @@ void MoveColliders(){
             MoveObject(ObjectVector[i], TimePassed);
         }
         CheckCollisions();
-        Resources::getInstance().accessToResourses.unlock();
+        //Resources::getInstance().accessToResourses.unlock();
+        while (Window::getWindow().pollEvent(Resources::getInstance().event)) {
+            switch (Resources::getInstance().event.type) {
+                case sf::Event::Closed:
+                    Window::getWindow().close();
+                    break;
+            }
+        }
     }
 };
 //MoveDots and RotateObjects and checks everything in case of collisions. Also will contain Gravity and some effects.

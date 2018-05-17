@@ -501,6 +501,33 @@ drawAll.cpp.s:
 	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawAll.cpp.s
 .PHONY : drawAll.cpp.s
 
+drawLines.o: drawLines.cpp.o
+
+.PHONY : drawLines.o
+
+# target to build an object file
+drawLines.cpp.o:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawLines.cpp.o
+.PHONY : drawLines.cpp.o
+
+drawLines.i: drawLines.cpp.i
+
+.PHONY : drawLines.i
+
+# target to preprocess a source file
+drawLines.cpp.i:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawLines.cpp.i
+.PHONY : drawLines.cpp.i
+
+drawLines.s: drawLines.cpp.s
+
+.PHONY : drawLines.s
+
+# target to generate assembly for a file
+drawLines.cpp.s:
+	$(MAKE) -f CMakeFiles/project_infa.dir/build.make CMakeFiles/project_infa.dir/drawLines.cpp.s
+.PHONY : drawLines.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -633,6 +660,9 @@ help:
 	@echo "... drawAll.o"
 	@echo "... drawAll.i"
 	@echo "... drawAll.s"
+	@echo "... drawLines.o"
+	@echo "... drawLines.i"
+	@echo "... drawLines.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
