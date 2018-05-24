@@ -68,12 +68,16 @@ std::pair<std::pair<float, float>, std::pair<float, float>> findMainBasisCoords(
     return std::make_pair(X, Y);
 };
 
-std::pair<float, float> solveEqulationSystem(float P0, double E0, float m1, float m2, float Vx2_0){
-    double D = std::pow(m2*P0, 2) - (std::pow(m2, 2) + m1*m2)*(std::pow(P0, 2) - E0*m1);
+std::pair<float, float> solveEqulationSystem(float P0, double E0, float m1, float m2, float Vx2, float Vx1){
+    Vx1 = -1*Vx1;
+    Vx2 = -1*Vx2;
+    /*
+    double D = std::pow(m2*P0, 2) - m1*m2*(m1 + m2)*(std::pow(P0, 2)*m2 - E0*m1*m1);
     assert (D > 0);
-    double Vx2 = (m2*P0 + std::sqrt(D))/(std::pow(m2, 2) + m1*m2);
-    if (std::abs(Vx2_0) - std::abs(Vx2) < 0) Vx2 = (m2*P0 - std::sqrt(D))/(std::pow(m2, 2) + m1*m2);
+    double Vx2 = (m2*P0 + std::sqrt(D))/m1*m2*(m1 + m2);
+    if (std::abs(Vx2_0) - std::abs(Vx2) < 0) Vx2 = (m2*P0 - std::sqrt(D))/m1*m2*(m1 + m2);
     float Vx1 = (P0 - m2*Vx2)/m1;
+     */
     return std::make_pair(Vx1, Vx2);
 };
 //FIXME

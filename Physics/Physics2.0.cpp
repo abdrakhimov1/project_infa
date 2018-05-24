@@ -133,7 +133,7 @@ void ElasticCollision(GameObject* Object1, GameObject* Object2){
     float m2 = Object2 -> getComponent<RigidBody>().mass;
     float P0 = Vx1*m1 + Vx2*m2;
     double E0 = m1*std::pow(Vx1, 2) + m2*std::pow(Vx2, 2);
-    std::pair<float, float> newObjectsXSpeeds = solveEqulationSystem(P0, E0, m1, m2, Vx2);
+    std::pair<float, float> newObjectsXSpeeds = solveEqulationSystem(P0, E0, m1, m2, Vx2, Vx1);
     Vx1 = std::get<0>(newObjectsXSpeeds);
     Vx2 = std::get<1>(newObjectsXSpeeds);
     std::pair<std::pair<float, float>, std::pair<float, float>> oldBasis = findMainBasisCoords(NewBasis);

@@ -14,4 +14,6 @@ void createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed,
 
 void createBorder();
 
+void createSquare(Dot dot1, Dot dot2, Dot dot3, Dot dot4, std::pair<float, float> speed, float mass, std::string texture_name, bool unmovable);
+
 #endif //PROJECT_INFA_SIMPLEFACTORY_H

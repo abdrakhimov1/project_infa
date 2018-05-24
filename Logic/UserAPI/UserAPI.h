@@ -69,21 +69,21 @@ public:
         return triangle;
     }
 
-    static GameObject createSquare(Dot dot1, Dot dot2, Dot dot3, Dot dot4, std::pair<float, float> speed, float mass, std::string texture_name){
-        GameObject square;
-        square.addComponent<Collider>();
-        square.getComponent<Collider>().Add_dot(dot1);
-        square.getComponent<Collider>().Add_dot(dot2);
-        square.getComponent<Collider>().Add_dot(dot3);
-        square.getComponent<Collider>().Add_dot(dot4);
-        square.getComponent<Collider>().calculateCellRadius();
-        square.addComponent<RigidBody>();
-        square.getComponent<RigidBody>().mass = mass;
-        square.getComponent<RigidBody>().speed = speed;
-        square.addComponent<DrawMe>();
-        square.getComponent<DrawMe>().texture_name = texture_name;
-        Resources::getInstance().addObject(square);
-        return square;
+    static void createSquare(Dot dot1, Dot dot2, Dot dot3, Dot dot4, std::pair<float, float> speed, float mass, std::string texture_name, bool unmovable){
+        GameObject* square = new GameObject;
+        square -> addComponent<Collider>();
+        square -> getComponent<Collider>().Add_dot(dot1);
+        square -> getComponent<Collider>().Add_dot(dot2);
+        square -> getComponent<Collider>().Add_dot(dot3);
+        square -> getComponent<Collider>().Add_dot(dot4);
+        square -> getComponent<Collider>().calculateCellRadius();
+        square -> addComponent<RigidBody>();
+        square -> getComponent<RigidBody>().mass = mass;
+        square -> getComponent<RigidBody>().speed = speed;
+        square -> getComponent<RigidBody>().unmovable = unmovable;
+        square -> addComponent<DrawMe>();
+        square -> getComponent<DrawMe>().texture_name = texture_name;
+        Resources::getInstance().Objects.push_back(*square);
     }
 
     static void createBorder() {

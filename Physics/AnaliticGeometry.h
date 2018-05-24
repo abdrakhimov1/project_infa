@@ -19,6 +19,6 @@ float operator-(Dot dot1, Dot dot2);
 
 std::pair<std::pair<float, float>, std::pair<float, float>> findMainBasisCoords(std::pair<std::pair<float, float>, std::pair<float, float>> Basis);
 
-std::pair<float, float> solveEqulationSystem(float P0, double E0, float m1, float m2, float Vx2_0);
+std::pair<float, float> solveEqulationSystem(float P0, double E0, float m1, float m2, float Vx2, float Vx1);
 
 #endif //PROJECT_INFA_ANALITICGEOMETRY_H

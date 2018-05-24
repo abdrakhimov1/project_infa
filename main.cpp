@@ -21,12 +21,8 @@
 
 
 int main(){
-    Dot dot1(500, 200);
-    Dot dot2(300, 560);
-    Dot dot3(480, 600);
-    Dot dot4(200, 200);
-    Dot dot5(120, 120);
-    Dot dot6(130, 240);
+    Dot dot1(500, 200), dot2(300, 560), dot3(480, 600);
+    Dot dot4(200, 200), dot5(120, 120), dot6(130, 240);
     Dot dot7(1000, 200), dot8(950, 350), dot9(960, 125);
     float x = 40.0;
     std::pair<float, float> speed1 = std::make_pair(x, x+2);
@@ -35,8 +31,8 @@ int main(){
 
     createTriangle(dot1, dot2, dot3, speed2, mass, "test_texture.jpg");
     createTriangle(dot4, dot5, dot6, speed1, mass, "test_texture.jpg");
-    createTriangle(dot7, dot8, dot9, std::make_pair(-1*x, x), 10*mass, "text_texture.jpg");
-    createBorder();
+    createTriangle(dot7, dot8, dot9, std::make_pair(-1*x, x), 10*mass, "test_texture.jpg");
+    //createBorder();
 
     std::thread drawing(drawLines);
     std::thread physics(Physics);
