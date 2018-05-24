@@ -142,7 +142,6 @@ void ElasticCollision(GameObject* Object1, GameObject* Object2){
 };
 
 void SolveCollision(GameObject* object1, GameObject* object2){
-    std::cout << "collision detected" << std::endl;
     ElasticCollision(object1, object2);
     if (object1 -> getComponent<RigidBody>().unmovable) object1 -> getComponent<RigidBody>().speed = std::make_pair(0, 0);
     if (object2 -> getComponent<RigidBody>().unmovable) object2 -> getComponent<RigidBody>().speed = std::make_pair(0, 0);

@@ -53,20 +53,19 @@ public:
         return ball;
     }
 
-    static GameObject createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed, float mass, std::string texture_name){
-        GameObject triangle;
-        triangle.addComponent<Collider>();
-        triangle.getComponent<Collider>().Add_dot(dot1);
-        triangle.getComponent<Collider>().Add_dot(dot2);
-        triangle.getComponent<Collider>().Add_dot(dot3);
-        triangle.getComponent<Collider>().calculateCellRadius();
-        triangle.addComponent<RigidBody>();
-        triangle.getComponent<RigidBody>().mass = mass;
-        triangle.getComponent<RigidBody>().speed = speed;
-        triangle.addComponent<DrawMe>();
-        triangle.getComponent<DrawMe>().texture_name = texture_name;
-        Resources::getInstance().addObject(triangle);
-        return triangle;
+    static void createTriangle(Dot dot1, Dot dot2, Dot dot3, std::pair<float, float> speed, float mass, std::string texture_name){
+        GameObject* triangle = new GameObject;
+        triangle -> addComponent<Collider>();
+        triangle -> getComponent<Collider>().Add_dot(dot1);
+        triangle -> getComponent<Collider>().Add_dot(dot2);
+        triangle -> getComponent<Collider>().Add_dot(dot3);
+        triangle -> getComponent<Collider>().calculateCellRadius();
+        triangle -> addComponent<RigidBody>();
+        triangle -> getComponent<RigidBody>().mass = mass;
+        triangle -> getComponent<RigidBody>().speed = speed;
+        triangle -> addComponent<DrawMe>();
+        triangle -> getComponent<DrawMe>().texture_name = texture_name;
+        Resources::getInstance().addObject(*triangle);
     }
 
     static void createSquare(Dot dot1, Dot dot2, Dot dot3, Dot dot4, std::pair<float, float> speed, float mass, std::string texture_name, bool unmovable){
