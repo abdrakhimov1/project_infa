@@ -1,13 +1,16 @@
 //
-// Created by ruby on 12.04.18.
+// Created by ruby on 24.05.18.
 //
+#include <string>
+#include <iostream>
+#include "../../Resources/GameObject.h"
+#include "../../Resources/resources.h"
+#include "../../Resources/Components.h"
+#include "../../Staff/allLibraries.h"
 
-#include "../Staff/allLibraries.h"
-#include "../Resources/Components.h"
-#include "resources.h"
+#ifndef PROJECT_USERAPI_H
+#define PROJECT_USERAPI_H
 
-#ifndef PROJECT_INFA_GAME_H
-#define PROJECT_INFA_GAME_H
 
 class specialScript{
 public:
@@ -20,7 +23,7 @@ public:
 
 };
 
-class Factory : public Script{
+class Factory : public specialScript{
 public:
     Factory();
 
@@ -45,4 +48,5 @@ public:
 
 };
 
-#endif //PROJECT_INFA_GAME_H
+
+#endif //PROJECT_USERAPI_H

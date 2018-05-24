@@ -16,6 +16,7 @@
 #include "Drawing/drawAll.h"
 #include "Resources/simpleFactory.h"
 #include "Drawing/drawLines.h"
+#include "Logic/UserAPI/UserAPI.h"
 //#include "Game.h"
 
 
