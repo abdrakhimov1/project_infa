@@ -13,7 +13,7 @@
 std::pair<float, float> FindVectorCoordinatesInNewBasis(std::pair<float, float> Vector,
                                                         std::pair<std::pair<float, float>, std::pair<float, float>> NewBasis);
 
-std::pair<std::pair<float, float>, std::pair<float, float>> FindNewBasisForCollision(GameObject Object1, GameObject Object2);
+std::pair<std::pair<float, float>, std::pair<float, float>> FindNewBasisForCollision(GameObject* Object1, GameObject* Object2);
 
 float operator-(Dot dot1, Dot dot2);
 

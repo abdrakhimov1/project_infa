@@ -23,9 +23,9 @@ std::pair<float, float> FindVectorCoordinatesInNewBasis(std::pair<float, float> 
 };
 //Some technical shit, don't touch it
 
-std::pair<std::pair<float, float>, std::pair<float, float>> FindNewBasisForCollision(GameObject Object1, GameObject Object2){
-    std::pair<float, float> FirstCenter = Object1.getComponent<Collider>().calculateMassCentre().crs;
-    std::pair<float, float> SecondCenter = Object2.getComponent<Collider>().calculateMassCentre().crs;
+std::pair<std::pair<float, float>, std::pair<float, float>> FindNewBasisForCollision(GameObject* Object1, GameObject* Object2){
+    std::pair<float, float> FirstCenter = Object1 -> getComponent<Collider>().calculateMassCentre().crs;
+    std::pair<float, float> SecondCenter = Object2 -> getComponent<Collider>().calculateMassCentre().crs;
     std::pair<float, float> X = SecondCenter + FirstCenter*(-1);
     float norm = std::sqrt(std::get<0>(X)*std::get<0>(X) + std::get<1>(X)*std::get<1>(X));
     X = X*(1/norm);

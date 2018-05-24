@@ -12,7 +12,7 @@
 #include "Logic/Extractors.h"
 #include "Drawing/Sprite.h"
 #include "Physics/AnaliticGeometry.h"
-#include "Physics/Physics.h"
+#include "Physics/Physics2.0.h"
 #include "Drawing/drawAll.h"
 #include "Resources/simpleFactory.h"
 #include "Drawing/drawLines.h"
@@ -26,21 +26,20 @@ int main(){
     Dot dot3(480, 600);
     Dot dot4(200, 200);
     Dot dot5(120, 120);
-    Dot dot6(120, 240);
-    float x = 10.0;
+    Dot dot6(130, 240);
+    Dot dot7(1000, 200), dot8(950, 350), dot9(960, 125);
+    float x = 40.0;
     std::pair<float, float> speed1 = std::make_pair(x, x+2);
     std::pair<float, float> speed2 = std::make_pair(-1*x, -1*x);
     float mass = 200;
 
     createTriangle(dot1, dot2, dot3, speed2, mass, "test_texture.jpg");
     createTriangle(dot4, dot5, dot6, speed1, mass, "test_texture.jpg");
-    //createBorder();
-
-    std::cout << TheyCollided(Resources::getInstance().Objects[0], Resources::getInstance().Objects[1]);
-    std::cout << TheyCollided(Resources::getInstance().Objects[1], Resources::getInstance().Objects[0]);
+    createTriangle(dot7, dot8, dot9, std::make_pair(-1*x, x), 10*mass, "text_texture.jpg");
+    createBorder();
 
     std::thread drawing(drawLines);
-    std::thread physics(MoveColliders);
+    std::thread physics(Physics);
 
     drawing.join();
     physics.join();
