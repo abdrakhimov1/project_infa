@@ -17,33 +17,10 @@
 #include "Resources/simpleFactory.h"
 #include "Drawing/drawLines.h"
 #include "Logic/UserAPI/UserAPI.h"
-//#include "Game.h"
+
 
 
 int main(){
-/*
-    GameObject obj;
-    GameObject obj2;
-
-    obj.addComponent<Script>();
-    obj2.addComponent<specialScript>();
-    obj.addComponent<Factory>();
-
-    obj.getComponent<Script>().update();
-    obj2.getComponent<specialScript>().update();
-
-
-    obj.getComponent<Factory>().update();
-    obj.getComponent<Factory>().createPlane();
-
-    Factory::createPlane();
-
-    Factory::addRigidBody(obj, 5, 10);
-
-
-
-
-*/
     Dot dot1(500, 200);
     Dot dot2(300, 560);
     Dot dot3(480, 600);
