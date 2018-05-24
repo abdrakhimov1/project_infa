@@ -150,15 +150,21 @@ public:
         Resources::getInstance().Objects.push_back(*object4);
     }
 
-    static void addRigidBody(GameObject object, float speedX, float speedY){
+    static void addRigidBody(GameObject object, float speedX, float speedY, float new_mass, float new_momentOfInertion, bool is_unmovable){
         object.addComponent<RigidBody>();
         object.getComponent<RigidBody>().speed.first = speedX;
         object.getComponent<RigidBody>().speed.first = speedY;
+        object.getComponent<RigidBody>().mass = new_mass;
+        object.getComponent<RigidBody>().momentOfInertion;
+        object.getComponent<RigidBody>().unmovable = is_unmovable;
+        bool unmovable;
     }
 
-    static void addCollider(GameObject object, std::vector<Dot> colliderDotsList){
+    static void addCollider(GameObject object, std::vector<Dot> colliderDotsList, float new_cellRadius){
         object.addComponent<Collider>();
         object.getComponent<Collider>().dotsList = colliderDotsList;
+        object.getComponent<Collider>().cellRadius = new_cellRadius;
+
     }
 
     static void addDrawMe(GameObject object, std::string setting_texture_name){
